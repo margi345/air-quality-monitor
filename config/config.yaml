@@ -1,0 +1,99 @@
+project:
+  name: "AirGuard - IoT Air Quality Monitor"
+  version: "1.0.0"
+  environment: "development"
+
+mqtt:
+  broker_host: "localhost"
+  broker_port: 1883
+  keepalive: 60
+  topic_sensor_data: "airguard/sensors/raw"
+  topic_alerts: "airguard/alerts"
+  topic_status: "airguard/device/status"
+  client_id_publisher: "esp32_airguard_01"
+  client_id_subscriber: "pipeline_subscriber_01"
+  qos: 1
+  reconnect_delay: 5
+
+simulator:
+  enabled: true
+  device_id: "SIM_DEVICE_01"
+  location: "Lab_Room_204"
+  publish_interval_seconds: 2
+  total_records: 10500
+  anomaly_probability: 0.05
+  dropout_probability: 0.02
+  duplicate_probability: 0.01
+  out_of_range_probability: 0.02
+  delayed_probability: 0.03
+
+sensors:
+  mq135:
+    name: "MQ-135 Air Quality"
+    unit: "ppm"
+    normal_min: 300
+    normal_max: 700
+    warning_threshold: 800
+    danger_threshold: 1000
+    out_of_range_min: 0
+    out_of_range_max: 10000
+  mq7:
+    name: "MQ-7 Carbon Monoxide"
+    unit: "ppm"
+    normal_min: 0
+    normal_max: 50
+    warning_threshold: 70
+    danger_threshold: 150
+    out_of_range_min: 0
+    out_of_range_max: 1000
+  dht22_temp:
+    name: "DHT22 Temperature"
+    unit: "C"
+    normal_min: 18.0
+    normal_max: 35.0
+    warning_threshold: 40.0
+    danger_threshold: 50.0
+    out_of_range_min: -40.0
+    out_of_range_max: 80.0
+  dht22_humidity:
+    name: "DHT22 Humidity"
+    unit: "%RH"
+    normal_min: 30.0
+    normal_max: 80.0
+    warning_threshold: 85.0
+    danger_threshold: 95.0
+    out_of_range_min: 0.0
+    out_of_range_max: 100.0
+
+influxdb:
+  url: "http://localhost:8086"
+  token: "ZhhLD6P-Flhu-5psUxAD69g-hQgq_YoncNPsH3-a2PkBs9VoBNlkvd8XC_ZbhagoE6p1NsP_zMUiNb1HFd5WhQ=="
+  org: "airguard_org"
+  bucket: "air_quality"
+  timeout: 10000
+
+processing:
+  aggregation_window_seconds: 60
+  smoothing_window: 5
+  max_timestamp_drift_seconds: 300
+  dedup_window_seconds: 10
+
+ml:
+  model_path: "src/output/models/aqi_forecast_model.pkl"
+  scaler_path: "src/output/models/aqi_scaler.pkl"
+  forecast_horizon_minutes: 30
+  training_lookback_hours: 6
+  retrain_interval_minutes: 60
+
+visualization:
+  streamlit_port: 8501
+  refresh_interval_seconds: 5
+  chart_lookback_minutes: 60
+
+logging:
+  level: "INFO"
+  log_dir: "logs"
+  log_file: "airguard.log"
+  max_bytes: 10485760
+  backup_count: 5
+  format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
