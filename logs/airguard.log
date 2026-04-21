@@ -571,3 +571,27 @@
 2026-04-21 13:07:16 | INFO     | src.processing.data_processor | Processed: 100 | Rejected: 0 | AQI: 75.3 (Moderate)
 2026-04-21 13:08:00 | WARNING  | src.utils.aqi_calculator | Concentration 8541.16 exceeds breakpoint table max
 2026-04-21 13:08:20 | WARNING  | src.utils.aqi_calculator | Concentration 5131.38 exceeds breakpoint table max
+2026-04-21 13:10:10 | WARNING  | src.utils.aqi_calculator | Concentration 7493.66 exceeds breakpoint table max
+2026-04-21 13:10:36 | INFO     | src.processing.data_processor | Processed: 200 | Rejected: 3 | AQI: 62.6 (Moderate)
+2026-04-21 13:13:15 | WARNING  | src.utils.aqi_calculator | Concentration 9587.49 exceeds breakpoint table max
+2026-04-21 13:13:57 | INFO     | src.processing.data_processor | Processed: 300 | Rejected: 5 | AQI: 79.2 (Moderate)
+2026-04-21 13:14:01 | WARNING  | src.utils.aqi_calculator | Concentration 5956.61 exceeds breakpoint table max
+2026-04-21 13:15:03 | WARNING  | src.utils.aqi_calculator | Concentration 6230.42 exceeds breakpoint table max
+2026-04-21 13:16:09 | WARNING  | src.utils.aqi_calculator | Concentration 9300.88 exceeds breakpoint table max
+2026-04-21 13:17:05 | WARNING  | src.utils.aqi_calculator | Concentration 8098.98 exceeds breakpoint table max
+2026-04-21 13:17:17 | INFO     | src.processing.data_processor | Processed: 400 | Rejected: 8 | AQI: 47.7 (Good)
+2026-04-21 13:17:37 | INFO     | src.device.simulator | Records published: 500 / 10500 | scenario=normal
+2026-04-21 13:17:53 | WARNING  | src.utils.aqi_calculator | Concentration 8593.77 exceeds breakpoint table max
+2026-04-21 13:18:11 | WARNING  | src.utils.aqi_calculator | Concentration 9449.09 exceeds breakpoint table max
+2026-04-21 13:18:43 | WARNING  | src.utils.aqi_calculator | Concentration 7491.01 exceeds breakpoint table max
+2026-04-21 13:18:57 | WARNING  | src.utils.aqi_calculator | Concentration 9636.32 exceeds breakpoint table max
+2026-04-21 13:19:07 | WARNING  | src.utils.aqi_calculator | Concentration 9634.31 exceeds breakpoint table max
+2026-04-21 13:19:17 | WARNING  | src.utils.aqi_calculator | Concentration 5082.40 exceeds breakpoint table max
+2026-04-21 13:20:37 | INFO     | src.processing.data_processor | Processed: 500 | Rejected: 9 | AQI: 59.9 (Moderate)
+2026-04-21 13:20:45 | WARNING  | src.utils.aqi_calculator | Concentration 9913.87 exceeds breakpoint table max
+2026-04-21 13:23:57 | INFO     | src.processing.data_processor | Processed: 600 | Rejected: 9 | AQI: 48.9 (Good)
+2026-04-21 13:24:54 | INFO     | src.communication.mqtt_subscriber | Subscriber stopped by user
+2026-04-21 13:24:54 | WARNING  | src.communication.mqtt_subscriber | Subscriber disconnected — rc=0
+2026-04-21 13:24:54 | INFO     | src.communication.mqtt_subscriber | Subscriber disconnected. Total received: 637 failed: 0
+2026-04-21 13:24:54 | INFO     | src.storage.influx_writer | InfluxDB connection closed. Written: 628 Failed: 0
+2026-04-21 13:24:54 | INFO     | __main__ | === AirGuard Pipeline Stopped ===
