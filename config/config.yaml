@@ -68,7 +68,7 @@ sensors:
 influxdb:
   url: "http://localhost:8086"
   token: "ZhhLD6P-Flhu-5psUxAD69g-hQgq_YoncNPsH3-a2PkBs9VoBNlkvd8XC_ZbhagoE6p1NsP_zMUiNb1HFd5WhQ=="
-  org: "airguard_org"
+  org: "none"
   bucket: "air_quality"
   timeout: 10000
 

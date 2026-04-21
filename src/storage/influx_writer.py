@@ -60,7 +60,7 @@ class InfluxWriter:
             if ts:
                 point = point.time(
                     datetime.fromisoformat(ts),
-                    write_precision=WritePrecision.SECONDS
+                    write_precision=WritePrecision.S
                 )
 
             self.write_api.write(
