@@ -65,7 +65,7 @@ class AQIForecaster:
         for col in required:
             if col not in df.columns:
                 df[col] = 0.0
-        df[required] = df[required].fillna(method="ffill").fillna(0)
+        df[required] = df[required].ffill().fillna(0)
 
         df["hour_of_day"] = df["_time"].dt.hour
         df["rolling_avg_aqi_5"] = df["aqi_value"].rolling(window=5, min_periods=1).mean()

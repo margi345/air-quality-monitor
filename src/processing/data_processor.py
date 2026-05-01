@@ -32,7 +32,14 @@ class DataProcessor:
 
     def _validate_timestamp(self, timestamp_str: str) -> Optional[datetime]:
         try:
-            ts = datetime.fromisoformat(timestamp_str)
+            # Handle numeric timestamp (milliseconds from ESP32 millis())
+            if isinstance(timestamp_str, (int, float)) or (
+                isinstance(timestamp_str, str) and str(timestamp_str).isdigit()
+            ):
+                # ESP32 millis() is not real time — use current time instead
+                return datetime.now(timezone.utc)
+
+            ts = datetime.fromisoformat(str(timestamp_str))
             if ts.tzinfo is None:
                 ts = ts.replace(tzinfo=timezone.utc)
             now = datetime.now(timezone.utc)
@@ -108,20 +115,20 @@ class DataProcessor:
             )
 
             processed = {
-                "device_id":        raw_payload.get("device_id"),
-                "location":         raw_payload.get("location"),
-                "timestamp":        ts.isoformat(),
-                "mq135_ppm":        mq135,
-                "mq7_ppm":          mq7,
-                "temperature_c":    temp,
-                "humidity_pct":     humidity,
-                "aqi_value":        aqi_result.aqi_value if aqi_result else None,
-                "aqi_category":     aqi_result.category if aqi_result else None,
-                "aqi_color":        aqi_result.color if aqi_result else None,
+                "device_id":          raw_payload.get("device_id"),
+                "location":           raw_payload.get("location"),
+                "timestamp":          ts.isoformat(),
+                "mq135_ppm":          mq135,
+                "mq7_ppm":            mq7,
+                "temperature_c":      temp,
+                "humidity_pct":       humidity,
+                "aqi_value":          aqi_result.aqi_value if aqi_result else None,
+                "aqi_category":       aqi_result.category if aqi_result else None,
+                "aqi_color":          aqi_result.color if aqi_result else None,
                 "dominant_pollutant": aqi_result.dominant_pollutant if aqi_result else None,
-                "recommendation":   recommendation,
-                "scenario":         raw_payload.get("scenario", "normal"),
-                "msg_id":           msg_id,
+                "recommendation":     recommendation,
+                "scenario":           raw_payload.get("scenario", "normal"),
+                "msg_id":             msg_id,
             }
 
             self.records_processed += 1

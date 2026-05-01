@@ -595,3 +595,1433 @@
 2026-04-21 13:24:54 | INFO     | src.communication.mqtt_subscriber | Subscriber disconnected. Total received: 637 failed: 0
 2026-04-21 13:24:54 | INFO     | src.storage.influx_writer | InfluxDB connection closed. Written: 628 Failed: 0
 2026-04-21 13:24:54 | INFO     | __main__ | === AirGuard Pipeline Stopped ===
+2026-04-30 23:55:28 | INFO     | pipeline | Logging initialised — level=INFO  file=logs\airguard.log
+2026-04-30 23:55:28 | INFO     | __main__ | === AirGuard Pipeline Starting ===
+2026-04-30 23:55:28 | INFO     | src.storage.influx_writer | InfluxDB connected at http://localhost:8086
+2026-04-30 23:55:30 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-04-30 23:55:32 | ERROR    | src.processing.data_processor | Invalid timestamp 2787552: fromisoformat: argument must be str
+2026-04-30 23:55:32 | INFO     | src.communication.mqtt_subscriber | MQTT Subscriber running — waiting for messages...
+2026-04-30 23:55:34 | ERROR    | src.processing.data_processor | Invalid timestamp 2789552: fromisoformat: argument must be str
+2026-04-30 23:55:36 | ERROR    | src.processing.data_processor | Invalid timestamp 2791552: fromisoformat: argument must be str
+2026-04-30 23:55:38 | ERROR    | src.processing.data_processor | Invalid timestamp 2793552: fromisoformat: argument must be str
+2026-04-30 23:55:40 | ERROR    | src.processing.data_processor | Invalid timestamp 2795552: fromisoformat: argument must be str
+2026-04-30 23:55:42 | ERROR    | src.processing.data_processor | Invalid timestamp 2797552: fromisoformat: argument must be str
+2026-04-30 23:55:44 | ERROR    | src.processing.data_processor | Invalid timestamp 2799552: fromisoformat: argument must be str
+2026-04-30 23:55:46 | ERROR    | src.processing.data_processor | Invalid timestamp 2801552: fromisoformat: argument must be str
+2026-04-30 23:55:48 | ERROR    | src.processing.data_processor | Invalid timestamp 2803552: fromisoformat: argument must be str
+2026-04-30 23:55:50 | ERROR    | src.processing.data_processor | Invalid timestamp 2805552: fromisoformat: argument must be str
+2026-04-30 23:55:52 | ERROR    | src.processing.data_processor | Invalid timestamp 2807552: fromisoformat: argument must be str
+2026-04-30 23:55:54 | ERROR    | src.processing.data_processor | Invalid timestamp 2809552: fromisoformat: argument must be str
+2026-04-30 23:55:56 | ERROR    | src.processing.data_processor | Invalid timestamp 2811552: fromisoformat: argument must be str
+2026-04-30 23:55:58 | ERROR    | src.processing.data_processor | Invalid timestamp 2813552: fromisoformat: argument must be str
+2026-04-30 23:55:59 | ERROR    | src.processing.data_processor | Invalid timestamp 2815552: fromisoformat: argument must be str
+2026-04-30 23:56:02 | ERROR    | src.processing.data_processor | Invalid timestamp 2817552: fromisoformat: argument must be str
+2026-04-30 23:56:04 | ERROR    | src.processing.data_processor | Invalid timestamp 2819552: fromisoformat: argument must be str
+2026-04-30 23:56:05 | ERROR    | src.processing.data_processor | Invalid timestamp 2821552: fromisoformat: argument must be str
+2026-04-30 23:56:08 | ERROR    | src.processing.data_processor | Invalid timestamp 2823553: fromisoformat: argument must be str
+2026-04-30 23:56:10 | ERROR    | src.processing.data_processor | Invalid timestamp 2825552: fromisoformat: argument must be str
+2026-04-30 23:56:11 | ERROR    | src.processing.data_processor | Invalid timestamp 2827551: fromisoformat: argument must be str
+2026-04-30 23:56:14 | ERROR    | src.processing.data_processor | Invalid timestamp 2829552: fromisoformat: argument must be str
+2026-04-30 23:56:15 | ERROR    | src.processing.data_processor | Invalid timestamp 2831552: fromisoformat: argument must be str
+2026-04-30 23:56:18 | ERROR    | src.processing.data_processor | Invalid timestamp 2833552: fromisoformat: argument must be str
+2026-04-30 23:56:20 | ERROR    | src.processing.data_processor | Invalid timestamp 2835552: fromisoformat: argument must be str
+2026-04-30 23:56:22 | ERROR    | src.processing.data_processor | Invalid timestamp 2837552: fromisoformat: argument must be str
+2026-04-30 23:56:23 | ERROR    | src.processing.data_processor | Invalid timestamp 2839552: fromisoformat: argument must be str
+2026-04-30 23:56:26 | ERROR    | src.processing.data_processor | Invalid timestamp 2841552: fromisoformat: argument must be str
+2026-04-30 23:56:28 | ERROR    | src.processing.data_processor | Invalid timestamp 2843552: fromisoformat: argument must be str
+2026-04-30 23:56:30 | ERROR    | src.processing.data_processor | Invalid timestamp 2845551: fromisoformat: argument must be str
+2026-04-30 23:56:31 | ERROR    | src.processing.data_processor | Invalid timestamp 2847552: fromisoformat: argument must be str
+2026-04-30 23:56:33 | ERROR    | src.processing.data_processor | Invalid timestamp 2849552: fromisoformat: argument must be str
+2026-04-30 23:56:36 | ERROR    | src.processing.data_processor | Invalid timestamp 2851552: fromisoformat: argument must be str
+2026-04-30 23:56:38 | ERROR    | src.processing.data_processor | Invalid timestamp 2853552: fromisoformat: argument must be str
+2026-04-30 23:56:39 | ERROR    | src.processing.data_processor | Invalid timestamp 2855552: fromisoformat: argument must be str
+2026-04-30 23:56:42 | ERROR    | src.processing.data_processor | Invalid timestamp 2857552: fromisoformat: argument must be str
+2026-04-30 23:56:44 | ERROR    | src.processing.data_processor | Invalid timestamp 2859552: fromisoformat: argument must be str
+2026-04-30 23:56:46 | ERROR    | src.processing.data_processor | Invalid timestamp 2861552: fromisoformat: argument must be str
+2026-04-30 23:56:47 | ERROR    | src.processing.data_processor | Invalid timestamp 2863552: fromisoformat: argument must be str
+2026-04-30 23:56:50 | ERROR    | src.processing.data_processor | Invalid timestamp 2865552: fromisoformat: argument must be str
+2026-04-30 23:56:51 | ERROR    | src.processing.data_processor | Invalid timestamp 2867552: fromisoformat: argument must be str
+2026-04-30 23:56:54 | ERROR    | src.processing.data_processor | Invalid timestamp 2869552: fromisoformat: argument must be str
+2026-04-30 23:56:55 | ERROR    | src.processing.data_processor | Invalid timestamp 2871552: fromisoformat: argument must be str
+2026-04-30 23:56:57 | ERROR    | src.processing.data_processor | Invalid timestamp 2873552: fromisoformat: argument must be str
+2026-04-30 23:56:59 | ERROR    | src.processing.data_processor | Invalid timestamp 2875552: fromisoformat: argument must be str
+2026-04-30 23:57:01 | ERROR    | src.processing.data_processor | Invalid timestamp 2877552: fromisoformat: argument must be str
+2026-04-30 23:57:03 | ERROR    | src.processing.data_processor | Invalid timestamp 2879551: fromisoformat: argument must be str
+2026-04-30 23:57:05 | ERROR    | src.processing.data_processor | Invalid timestamp 2881552: fromisoformat: argument must be str
+2026-04-30 23:57:07 | ERROR    | src.processing.data_processor | Invalid timestamp 2883552: fromisoformat: argument must be str
+2026-04-30 23:57:10 | ERROR    | src.processing.data_processor | Invalid timestamp 2885552: fromisoformat: argument must be str
+2026-04-30 23:57:11 | ERROR    | src.processing.data_processor | Invalid timestamp 2887553: fromisoformat: argument must be str
+2026-04-30 23:57:13 | ERROR    | src.processing.data_processor | Invalid timestamp 2889552: fromisoformat: argument must be str
+2026-04-30 23:57:15 | ERROR    | src.processing.data_processor | Invalid timestamp 2891552: fromisoformat: argument must be str
+2026-04-30 23:57:17 | ERROR    | src.processing.data_processor | Invalid timestamp 2893552: fromisoformat: argument must be str
+2026-04-30 23:57:20 | ERROR    | src.processing.data_processor | Invalid timestamp 2895552: fromisoformat: argument must be str
+2026-04-30 23:57:22 | ERROR    | src.processing.data_processor | Invalid timestamp 2897552: fromisoformat: argument must be str
+2026-04-30 23:57:23 | ERROR    | src.processing.data_processor | Invalid timestamp 2899552: fromisoformat: argument must be str
+2026-04-30 23:57:25 | ERROR    | src.processing.data_processor | Invalid timestamp 2901552: fromisoformat: argument must be str
+2026-04-30 23:57:28 | ERROR    | src.processing.data_processor | Invalid timestamp 2903552: fromisoformat: argument must be str
+2026-04-30 23:57:29 | ERROR    | src.processing.data_processor | Invalid timestamp 2905552: fromisoformat: argument must be str
+2026-04-30 23:57:31 | ERROR    | src.processing.data_processor | Invalid timestamp 2907552: fromisoformat: argument must be str
+2026-04-30 23:57:33 | ERROR    | src.processing.data_processor | Invalid timestamp 2909551: fromisoformat: argument must be str
+2026-04-30 23:57:35 | ERROR    | src.processing.data_processor | Invalid timestamp 2911552: fromisoformat: argument must be str
+2026-04-30 23:57:37 | ERROR    | src.processing.data_processor | Invalid timestamp 2913552: fromisoformat: argument must be str
+2026-04-30 23:57:39 | ERROR    | src.processing.data_processor | Invalid timestamp 2915552: fromisoformat: argument must be str
+2026-04-30 23:57:41 | ERROR    | src.processing.data_processor | Invalid timestamp 2917552: fromisoformat: argument must be str
+2026-04-30 23:57:43 | ERROR    | src.processing.data_processor | Invalid timestamp 2919484: fromisoformat: argument must be str
+2026-04-30 23:57:45 | ERROR    | src.processing.data_processor | Invalid timestamp 2921483: fromisoformat: argument must be str
+2026-04-30 23:57:47 | ERROR    | src.processing.data_processor | Invalid timestamp 2923483: fromisoformat: argument must be str
+2026-04-30 23:57:49 | ERROR    | src.processing.data_processor | Invalid timestamp 2925483: fromisoformat: argument must be str
+2026-04-30 23:57:51 | ERROR    | src.processing.data_processor | Invalid timestamp 2927483: fromisoformat: argument must be str
+2026-04-30 23:57:53 | ERROR    | src.processing.data_processor | Invalid timestamp 2929483: fromisoformat: argument must be str
+2026-04-30 23:57:55 | ERROR    | src.processing.data_processor | Invalid timestamp 2931483: fromisoformat: argument must be str
+2026-04-30 23:57:57 | ERROR    | src.processing.data_processor | Invalid timestamp 2933483: fromisoformat: argument must be str
+2026-04-30 23:57:59 | ERROR    | src.processing.data_processor | Invalid timestamp 2935552: fromisoformat: argument must be str
+2026-04-30 23:58:01 | ERROR    | src.processing.data_processor | Invalid timestamp 2937552: fromisoformat: argument must be str
+2026-04-30 23:58:03 | ERROR    | src.processing.data_processor | Invalid timestamp 2939552: fromisoformat: argument must be str
+2026-04-30 23:58:05 | ERROR    | src.processing.data_processor | Invalid timestamp 2941552: fromisoformat: argument must be str
+2026-04-30 23:58:07 | ERROR    | src.processing.data_processor | Invalid timestamp 2943552: fromisoformat: argument must be str
+2026-04-30 23:58:09 | ERROR    | src.processing.data_processor | Invalid timestamp 2945552: fromisoformat: argument must be str
+2026-04-30 23:58:11 | ERROR    | src.processing.data_processor | Invalid timestamp 2947553: fromisoformat: argument must be str
+2026-04-30 23:58:13 | ERROR    | src.processing.data_processor | Invalid timestamp 2949552: fromisoformat: argument must be str
+2026-04-30 23:58:15 | ERROR    | src.processing.data_processor | Invalid timestamp 2951552: fromisoformat: argument must be str
+2026-04-30 23:58:17 | ERROR    | src.processing.data_processor | Invalid timestamp 2953552: fromisoformat: argument must be str
+2026-04-30 23:58:19 | ERROR    | src.processing.data_processor | Invalid timestamp 2955552: fromisoformat: argument must be str
+2026-04-30 23:58:21 | ERROR    | src.processing.data_processor | Invalid timestamp 2957552: fromisoformat: argument must be str
+2026-04-30 23:58:23 | ERROR    | src.processing.data_processor | Invalid timestamp 2959552: fromisoformat: argument must be str
+2026-04-30 23:58:25 | ERROR    | src.processing.data_processor | Invalid timestamp 2961553: fromisoformat: argument must be str
+2026-04-30 23:58:28 | ERROR    | src.processing.data_processor | Invalid timestamp 2963552: fromisoformat: argument must be str
+2026-04-30 23:58:29 | ERROR    | src.processing.data_processor | Invalid timestamp 2965483: fromisoformat: argument must be str
+2026-04-30 23:58:31 | ERROR    | src.processing.data_processor | Invalid timestamp 2967483: fromisoformat: argument must be str
+2026-04-30 23:58:33 | ERROR    | src.processing.data_processor | Invalid timestamp 2969483: fromisoformat: argument must be str
+2026-04-30 23:58:35 | ERROR    | src.processing.data_processor | Invalid timestamp 2971483: fromisoformat: argument must be str
+2026-04-30 23:58:37 | ERROR    | src.processing.data_processor | Invalid timestamp 2973483: fromisoformat: argument must be str
+2026-04-30 23:58:39 | ERROR    | src.processing.data_processor | Invalid timestamp 2975483: fromisoformat: argument must be str
+2026-04-30 23:58:41 | ERROR    | src.processing.data_processor | Invalid timestamp 2977483: fromisoformat: argument must be str
+2026-04-30 23:58:43 | ERROR    | src.processing.data_processor | Invalid timestamp 2979483: fromisoformat: argument must be str
+2026-04-30 23:58:45 | ERROR    | src.processing.data_processor | Invalid timestamp 2981483: fromisoformat: argument must be str
+2026-04-30 23:58:47 | ERROR    | src.processing.data_processor | Invalid timestamp 2983552: fromisoformat: argument must be str
+2026-04-30 23:58:49 | ERROR    | src.processing.data_processor | Invalid timestamp 2985552: fromisoformat: argument must be str
+2026-04-30 23:58:51 | ERROR    | src.processing.data_processor | Invalid timestamp 2987552: fromisoformat: argument must be str
+2026-04-30 23:58:53 | ERROR    | src.processing.data_processor | Invalid timestamp 2989483: fromisoformat: argument must be str
+2026-04-30 23:58:55 | ERROR    | src.processing.data_processor | Invalid timestamp 2991483: fromisoformat: argument must be str
+2026-04-30 23:58:57 | ERROR    | src.processing.data_processor | Invalid timestamp 2993483: fromisoformat: argument must be str
+2026-04-30 23:58:59 | ERROR    | src.processing.data_processor | Invalid timestamp 2995483: fromisoformat: argument must be str
+2026-04-30 23:59:01 | ERROR    | src.processing.data_processor | Invalid timestamp 2997483: fromisoformat: argument must be str
+2026-04-30 23:59:03 | ERROR    | src.processing.data_processor | Invalid timestamp 2999483: fromisoformat: argument must be str
+2026-04-30 23:59:05 | ERROR    | src.processing.data_processor | Invalid timestamp 3001483: fromisoformat: argument must be str
+2026-04-30 23:59:07 | ERROR    | src.processing.data_processor | Invalid timestamp 3003483: fromisoformat: argument must be str
+2026-04-30 23:59:09 | ERROR    | src.processing.data_processor | Invalid timestamp 3005483: fromisoformat: argument must be str
+2026-04-30 23:59:11 | ERROR    | src.processing.data_processor | Invalid timestamp 3007483: fromisoformat: argument must be str
+2026-04-30 23:59:13 | ERROR    | src.processing.data_processor | Invalid timestamp 3009483: fromisoformat: argument must be str
+2026-04-30 23:59:15 | ERROR    | src.processing.data_processor | Invalid timestamp 3011483: fromisoformat: argument must be str
+2026-04-30 23:59:17 | ERROR    | src.processing.data_processor | Invalid timestamp 3013483: fromisoformat: argument must be str
+2026-04-30 23:59:19 | ERROR    | src.processing.data_processor | Invalid timestamp 3015483: fromisoformat: argument must be str
+2026-04-30 23:59:21 | ERROR    | src.processing.data_processor | Invalid timestamp 3017483: fromisoformat: argument must be str
+2026-04-30 23:59:23 | ERROR    | src.processing.data_processor | Invalid timestamp 3019483: fromisoformat: argument must be str
+2026-04-30 23:59:25 | ERROR    | src.processing.data_processor | Invalid timestamp 3021483: fromisoformat: argument must be str
+2026-04-30 23:59:27 | ERROR    | src.processing.data_processor | Invalid timestamp 3023483: fromisoformat: argument must be str
+2026-04-30 23:59:29 | ERROR    | src.processing.data_processor | Invalid timestamp 3025483: fromisoformat: argument must be str
+2026-04-30 23:59:31 | ERROR    | src.processing.data_processor | Invalid timestamp 3027483: fromisoformat: argument must be str
+2026-04-30 23:59:33 | ERROR    | src.processing.data_processor | Invalid timestamp 3029483: fromisoformat: argument must be str
+2026-04-30 23:59:35 | ERROR    | src.processing.data_processor | Invalid timestamp 3031483: fromisoformat: argument must be str
+2026-04-30 23:59:37 | ERROR    | src.processing.data_processor | Invalid timestamp 3033483: fromisoformat: argument must be str
+2026-04-30 23:59:39 | ERROR    | src.processing.data_processor | Invalid timestamp 3035483: fromisoformat: argument must be str
+2026-04-30 23:59:41 | ERROR    | src.processing.data_processor | Invalid timestamp 3037483: fromisoformat: argument must be str
+2026-04-30 23:59:43 | ERROR    | src.processing.data_processor | Invalid timestamp 3039483: fromisoformat: argument must be str
+2026-04-30 23:59:45 | ERROR    | src.processing.data_processor | Invalid timestamp 3041484: fromisoformat: argument must be str
+2026-04-30 23:59:49 | ERROR    | src.processing.data_processor | Invalid timestamp 3043483: fromisoformat: argument must be str
+2026-04-30 23:59:49 | ERROR    | src.processing.data_processor | Invalid timestamp 3045484: fromisoformat: argument must be str
+2026-04-30 23:59:51 | ERROR    | src.processing.data_processor | Invalid timestamp 3047483: fromisoformat: argument must be str
+2026-04-30 23:59:53 | ERROR    | src.processing.data_processor | Invalid timestamp 3049483: fromisoformat: argument must be str
+2026-04-30 23:59:55 | ERROR    | src.processing.data_processor | Invalid timestamp 3051483: fromisoformat: argument must be str
+2026-04-30 23:59:57 | ERROR    | src.processing.data_processor | Invalid timestamp 3053483: fromisoformat: argument must be str
+2026-04-30 23:59:59 | ERROR    | src.processing.data_processor | Invalid timestamp 3055483: fromisoformat: argument must be str
+2026-05-01 00:00:01 | ERROR    | src.processing.data_processor | Invalid timestamp 3057483: fromisoformat: argument must be str
+2026-05-01 00:00:03 | ERROR    | src.processing.data_processor | Invalid timestamp 3059483: fromisoformat: argument must be str
+2026-05-01 00:00:05 | ERROR    | src.processing.data_processor | Invalid timestamp 3061484: fromisoformat: argument must be str
+2026-05-01 00:00:07 | ERROR    | src.processing.data_processor | Invalid timestamp 3063484: fromisoformat: argument must be str
+2026-05-01 00:00:09 | ERROR    | src.processing.data_processor | Invalid timestamp 3065484: fromisoformat: argument must be str
+2026-05-01 00:00:11 | ERROR    | src.processing.data_processor | Invalid timestamp 3067483: fromisoformat: argument must be str
+2026-05-01 00:00:13 | ERROR    | src.processing.data_processor | Invalid timestamp 3069484: fromisoformat: argument must be str
+2026-05-01 00:00:15 | ERROR    | src.processing.data_processor | Invalid timestamp 3071483: fromisoformat: argument must be str
+2026-05-01 00:00:17 | ERROR    | src.processing.data_processor | Invalid timestamp 3073483: fromisoformat: argument must be str
+2026-05-01 00:00:19 | ERROR    | src.processing.data_processor | Invalid timestamp 3075484: fromisoformat: argument must be str
+2026-05-01 00:00:21 | ERROR    | src.processing.data_processor | Invalid timestamp 3077483: fromisoformat: argument must be str
+2026-05-01 00:00:23 | ERROR    | src.processing.data_processor | Invalid timestamp 3079484: fromisoformat: argument must be str
+2026-05-01 00:00:25 | ERROR    | src.processing.data_processor | Invalid timestamp 3081483: fromisoformat: argument must be str
+2026-05-01 00:00:27 | ERROR    | src.processing.data_processor | Invalid timestamp 3083484: fromisoformat: argument must be str
+2026-05-01 00:00:29 | ERROR    | src.processing.data_processor | Invalid timestamp 3085484: fromisoformat: argument must be str
+2026-05-01 00:00:31 | ERROR    | src.processing.data_processor | Invalid timestamp 3087483: fromisoformat: argument must be str
+2026-05-01 00:00:33 | ERROR    | src.processing.data_processor | Invalid timestamp 3089484: fromisoformat: argument must be str
+2026-05-01 00:00:35 | ERROR    | src.processing.data_processor | Invalid timestamp 3091484: fromisoformat: argument must be str
+2026-05-01 00:00:37 | ERROR    | src.processing.data_processor | Invalid timestamp 3093484: fromisoformat: argument must be str
+2026-05-01 00:00:39 | ERROR    | src.processing.data_processor | Invalid timestamp 3095484: fromisoformat: argument must be str
+2026-05-01 00:00:41 | ERROR    | src.processing.data_processor | Invalid timestamp 3097484: fromisoformat: argument must be str
+2026-05-01 00:00:43 | ERROR    | src.processing.data_processor | Invalid timestamp 3099483: fromisoformat: argument must be str
+2026-05-01 00:00:45 | ERROR    | src.processing.data_processor | Invalid timestamp 3101483: fromisoformat: argument must be str
+2026-05-01 00:00:47 | ERROR    | src.processing.data_processor | Invalid timestamp 3103483: fromisoformat: argument must be str
+2026-05-01 00:00:49 | ERROR    | src.processing.data_processor | Invalid timestamp 3105483: fromisoformat: argument must be str
+2026-05-01 00:00:51 | ERROR    | src.processing.data_processor | Invalid timestamp 3107484: fromisoformat: argument must be str
+2026-05-01 00:00:53 | ERROR    | src.processing.data_processor | Invalid timestamp 3109483: fromisoformat: argument must be str
+2026-05-01 00:00:55 | ERROR    | src.processing.data_processor | Invalid timestamp 3111484: fromisoformat: argument must be str
+2026-05-01 00:00:57 | ERROR    | src.processing.data_processor | Invalid timestamp 3113483: fromisoformat: argument must be str
+2026-05-01 00:00:59 | ERROR    | src.processing.data_processor | Invalid timestamp 3115483: fromisoformat: argument must be str
+2026-05-01 00:01:01 | ERROR    | src.processing.data_processor | Invalid timestamp 3117483: fromisoformat: argument must be str
+2026-05-01 00:01:03 | ERROR    | src.processing.data_processor | Invalid timestamp 3119483: fromisoformat: argument must be str
+2026-05-01 00:01:05 | ERROR    | src.processing.data_processor | Invalid timestamp 3121483: fromisoformat: argument must be str
+2026-05-01 00:01:07 | ERROR    | src.processing.data_processor | Invalid timestamp 3123483: fromisoformat: argument must be str
+2026-05-01 00:01:10 | ERROR    | src.processing.data_processor | Invalid timestamp 3125484: fromisoformat: argument must be str
+2026-05-01 00:01:11 | ERROR    | src.processing.data_processor | Invalid timestamp 3127484: fromisoformat: argument must be str
+2026-05-01 00:01:13 | ERROR    | src.processing.data_processor | Invalid timestamp 3129484: fromisoformat: argument must be str
+2026-05-01 00:01:15 | ERROR    | src.processing.data_processor | Invalid timestamp 3131483: fromisoformat: argument must be str
+2026-05-01 00:01:17 | ERROR    | src.processing.data_processor | Invalid timestamp 3133483: fromisoformat: argument must be str
+2026-05-01 00:01:19 | ERROR    | src.processing.data_processor | Invalid timestamp 3135483: fromisoformat: argument must be str
+2026-05-01 00:01:21 | ERROR    | src.processing.data_processor | Invalid timestamp 3137484: fromisoformat: argument must be str
+2026-05-01 00:01:23 | ERROR    | src.processing.data_processor | Invalid timestamp 3139483: fromisoformat: argument must be str
+2026-05-01 00:01:25 | ERROR    | src.processing.data_processor | Invalid timestamp 3141483: fromisoformat: argument must be str
+2026-05-01 00:01:27 | ERROR    | src.processing.data_processor | Invalid timestamp 3143483: fromisoformat: argument must be str
+2026-05-01 00:01:29 | ERROR    | src.processing.data_processor | Invalid timestamp 3145483: fromisoformat: argument must be str
+2026-05-01 00:01:31 | ERROR    | src.processing.data_processor | Invalid timestamp 3147553: fromisoformat: argument must be str
+2026-05-01 00:01:33 | ERROR    | src.processing.data_processor | Invalid timestamp 3149552: fromisoformat: argument must be str
+2026-05-01 00:01:35 | ERROR    | src.processing.data_processor | Invalid timestamp 3151552: fromisoformat: argument must be str
+2026-05-01 00:01:37 | ERROR    | src.processing.data_processor | Invalid timestamp 3153552: fromisoformat: argument must be str
+2026-05-01 00:01:39 | ERROR    | src.processing.data_processor | Invalid timestamp 3155552: fromisoformat: argument must be str
+2026-05-01 00:01:41 | ERROR    | src.processing.data_processor | Invalid timestamp 3157552: fromisoformat: argument must be str
+2026-05-01 00:01:43 | ERROR    | src.processing.data_processor | Invalid timestamp 3159552: fromisoformat: argument must be str
+2026-05-01 00:01:45 | ERROR    | src.processing.data_processor | Invalid timestamp 3161552: fromisoformat: argument must be str
+2026-05-01 00:01:47 | ERROR    | src.processing.data_processor | Invalid timestamp 3163552: fromisoformat: argument must be str
+2026-05-01 00:01:49 | ERROR    | src.processing.data_processor | Invalid timestamp 3165552: fromisoformat: argument must be str
+2026-05-01 00:01:51 | ERROR    | src.processing.data_processor | Invalid timestamp 3167483: fromisoformat: argument must be str
+2026-05-01 00:01:53 | ERROR    | src.processing.data_processor | Invalid timestamp 3169483: fromisoformat: argument must be str
+2026-05-01 00:01:55 | ERROR    | src.processing.data_processor | Invalid timestamp 3171484: fromisoformat: argument must be str
+2026-05-01 00:01:57 | ERROR    | src.processing.data_processor | Invalid timestamp 3173483: fromisoformat: argument must be str
+2026-05-01 00:01:59 | ERROR    | src.processing.data_processor | Invalid timestamp 3175484: fromisoformat: argument must be str
+2026-05-01 00:02:01 | ERROR    | src.processing.data_processor | Invalid timestamp 3177483: fromisoformat: argument must be str
+2026-05-01 00:02:03 | ERROR    | src.processing.data_processor | Invalid timestamp 3179484: fromisoformat: argument must be str
+2026-05-01 00:02:05 | ERROR    | src.processing.data_processor | Invalid timestamp 3181483: fromisoformat: argument must be str
+2026-05-01 00:02:07 | ERROR    | src.processing.data_processor | Invalid timestamp 3183484: fromisoformat: argument must be str
+2026-05-01 00:02:09 | ERROR    | src.processing.data_processor | Invalid timestamp 3185483: fromisoformat: argument must be str
+2026-05-01 00:02:11 | ERROR    | src.processing.data_processor | Invalid timestamp 3187483: fromisoformat: argument must be str
+2026-05-01 00:02:13 | ERROR    | src.processing.data_processor | Invalid timestamp 3189483: fromisoformat: argument must be str
+2026-05-01 00:02:15 | ERROR    | src.processing.data_processor | Invalid timestamp 3191484: fromisoformat: argument must be str
+2026-05-01 00:02:17 | ERROR    | src.processing.data_processor | Invalid timestamp 3193483: fromisoformat: argument must be str
+2026-05-01 00:02:19 | ERROR    | src.processing.data_processor | Invalid timestamp 3195483: fromisoformat: argument must be str
+2026-05-01 00:02:21 | ERROR    | src.processing.data_processor | Invalid timestamp 3197483: fromisoformat: argument must be str
+2026-05-01 00:02:23 | ERROR    | src.processing.data_processor | Invalid timestamp 3199484: fromisoformat: argument must be str
+2026-05-01 00:02:25 | ERROR    | src.processing.data_processor | Invalid timestamp 3201483: fromisoformat: argument must be str
+2026-05-01 00:02:27 | ERROR    | src.processing.data_processor | Invalid timestamp 3203483: fromisoformat: argument must be str
+2026-05-01 00:02:28 | INFO     | src.communication.mqtt_subscriber | Subscriber stopped by user
+2026-05-01 00:02:28 | WARNING  | src.communication.mqtt_subscriber | Subscriber disconnected — rc=0
+2026-05-01 00:02:28 | INFO     | src.communication.mqtt_subscriber | Subscriber disconnected. Total received: 209 failed: 0
+2026-05-01 00:02:28 | INFO     | src.storage.influx_writer | InfluxDB connection closed. Written: 0 Failed: 0
+2026-05-01 00:02:28 | INFO     | __main__ | === AirGuard Pipeline Stopped ===
+2026-05-01 00:02:41 | INFO     | pipeline | Logging initialised — level=INFO  file=logs\airguard.log
+2026-05-01 00:02:41 | INFO     | __main__ | === AirGuard Pipeline Starting ===
+2026-05-01 00:02:41 | INFO     | src.storage.influx_writer | InfluxDB connected at http://localhost:8086
+2026-05-01 00:02:43 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 00:02:45 | WARNING  | src.utils.aqi_calculator | Concentration 437.26 exceeds breakpoint table max
+2026-05-01 00:02:45 | INFO     | src.communication.mqtt_subscriber | MQTT Subscriber running — waiting for messages...
+2026-05-01 00:02:47 | WARNING  | src.utils.aqi_calculator | Concentration 437.90 exceeds breakpoint table max
+2026-05-01 00:02:49 | WARNING  | src.utils.aqi_calculator | Concentration 436.45 exceeds breakpoint table max
+2026-05-01 00:02:51 | WARNING  | src.utils.aqi_calculator | Concentration 435.49 exceeds breakpoint table max
+2026-05-01 00:02:53 | WARNING  | src.utils.aqi_calculator | Concentration 435.81 exceeds breakpoint table max
+2026-05-01 00:02:55 | WARNING  | src.utils.aqi_calculator | Concentration 435.97 exceeds breakpoint table max
+2026-05-01 00:02:57 | WARNING  | src.utils.aqi_calculator | Concentration 435.81 exceeds breakpoint table max
+2026-05-01 00:02:59 | WARNING  | src.utils.aqi_calculator | Concentration 435.81 exceeds breakpoint table max
+2026-05-01 00:03:01 | WARNING  | src.utils.aqi_calculator | Concentration 433.71 exceeds breakpoint table max
+2026-05-01 00:03:03 | WARNING  | src.utils.aqi_calculator | Concentration 435.81 exceeds breakpoint table max
+2026-05-01 00:03:05 | WARNING  | src.utils.aqi_calculator | Concentration 435.65 exceeds breakpoint table max
+2026-05-01 00:03:07 | WARNING  | src.utils.aqi_calculator | Concentration 435.65 exceeds breakpoint table max
+2026-05-01 00:03:09 | WARNING  | src.utils.aqi_calculator | Concentration 435.00 exceeds breakpoint table max
+2026-05-01 00:03:11 | WARNING  | src.utils.aqi_calculator | Concentration 433.55 exceeds breakpoint table max
+2026-05-01 00:03:13 | WARNING  | src.utils.aqi_calculator | Concentration 435.33 exceeds breakpoint table max
+2026-05-01 00:03:15 | WARNING  | src.utils.aqi_calculator | Concentration 435.00 exceeds breakpoint table max
+2026-05-01 00:03:17 | WARNING  | src.utils.aqi_calculator | Concentration 431.14 exceeds breakpoint table max
+2026-05-01 00:03:19 | WARNING  | src.utils.aqi_calculator | Concentration 435.81 exceeds breakpoint table max
+2026-05-01 00:03:21 | WARNING  | src.utils.aqi_calculator | Concentration 434.52 exceeds breakpoint table max
+2026-05-01 00:03:23 | WARNING  | src.utils.aqi_calculator | Concentration 435.00 exceeds breakpoint table max
+2026-05-01 00:03:25 | WARNING  | src.utils.aqi_calculator | Concentration 434.84 exceeds breakpoint table max
+2026-05-01 00:03:27 | WARNING  | src.utils.aqi_calculator | Concentration 434.36 exceeds breakpoint table max
+2026-05-01 00:03:29 | WARNING  | src.utils.aqi_calculator | Concentration 435.00 exceeds breakpoint table max
+2026-05-01 00:03:31 | WARNING  | src.utils.aqi_calculator | Concentration 433.23 exceeds breakpoint table max
+2026-05-01 00:03:33 | WARNING  | src.utils.aqi_calculator | Concentration 435.00 exceeds breakpoint table max
+2026-05-01 00:03:35 | WARNING  | src.utils.aqi_calculator | Concentration 434.84 exceeds breakpoint table max
+2026-05-01 00:03:37 | WARNING  | src.utils.aqi_calculator | Concentration 434.68 exceeds breakpoint table max
+2026-05-01 00:03:39 | WARNING  | src.utils.aqi_calculator | Concentration 434.68 exceeds breakpoint table max
+2026-05-01 00:03:41 | WARNING  | src.utils.aqi_calculator | Concentration 433.71 exceeds breakpoint table max
+2026-05-01 00:03:43 | WARNING  | src.utils.aqi_calculator | Concentration 435.00 exceeds breakpoint table max
+2026-05-01 00:03:45 | WARNING  | src.utils.aqi_calculator | Concentration 434.36 exceeds breakpoint table max
+2026-05-01 00:03:47 | WARNING  | src.utils.aqi_calculator | Concentration 434.20 exceeds breakpoint table max
+2026-05-01 00:03:49 | WARNING  | src.utils.aqi_calculator | Concentration 434.20 exceeds breakpoint table max
+2026-05-01 00:03:51 | WARNING  | src.utils.aqi_calculator | Concentration 433.07 exceeds breakpoint table max
+2026-05-01 00:03:53 | WARNING  | src.utils.aqi_calculator | Concentration 434.04 exceeds breakpoint table max
+2026-05-01 00:03:55 | WARNING  | src.utils.aqi_calculator | Concentration 434.20 exceeds breakpoint table max
+2026-05-01 00:03:57 | WARNING  | src.utils.aqi_calculator | Concentration 434.04 exceeds breakpoint table max
+2026-05-01 00:03:59 | WARNING  | src.utils.aqi_calculator | Concentration 434.36 exceeds breakpoint table max
+2026-05-01 00:04:01 | WARNING  | src.utils.aqi_calculator | Concentration 433.23 exceeds breakpoint table max
+2026-05-01 00:04:03 | WARNING  | src.utils.aqi_calculator | Concentration 433.55 exceeds breakpoint table max
+2026-05-01 00:04:05 | WARNING  | src.utils.aqi_calculator | Concentration 432.75 exceeds breakpoint table max
+2026-05-01 00:04:07 | WARNING  | src.utils.aqi_calculator | Concentration 434.04 exceeds breakpoint table max
+2026-05-01 00:04:09 | WARNING  | src.utils.aqi_calculator | Concentration 434.36 exceeds breakpoint table max
+2026-05-01 00:04:11 | WARNING  | src.utils.aqi_calculator | Concentration 433.55 exceeds breakpoint table max
+2026-05-01 00:04:13 | WARNING  | src.utils.aqi_calculator | Concentration 434.36 exceeds breakpoint table max
+2026-05-01 00:04:15 | WARNING  | src.utils.aqi_calculator | Concentration 434.04 exceeds breakpoint table max
+2026-05-01 00:04:17 | WARNING  | src.utils.aqi_calculator | Concentration 433.88 exceeds breakpoint table max
+2026-05-01 00:04:19 | WARNING  | src.utils.aqi_calculator | Concentration 433.39 exceeds breakpoint table max
+2026-05-01 00:04:21 | WARNING  | src.utils.aqi_calculator | Concentration 434.52 exceeds breakpoint table max
+2026-05-01 00:04:23 | WARNING  | src.utils.aqi_calculator | Concentration 433.23 exceeds breakpoint table max
+2026-05-01 00:04:25 | WARNING  | src.utils.aqi_calculator | Concentration 433.71 exceeds breakpoint table max
+2026-05-01 00:04:27 | WARNING  | src.utils.aqi_calculator | Concentration 433.88 exceeds breakpoint table max
+2026-05-01 00:04:29 | WARNING  | src.utils.aqi_calculator | Concentration 433.55 exceeds breakpoint table max
+2026-05-01 00:04:31 | WARNING  | src.utils.aqi_calculator | Concentration 431.62 exceeds breakpoint table max
+2026-05-01 00:04:33 | WARNING  | src.utils.aqi_calculator | Concentration 433.07 exceeds breakpoint table max
+2026-05-01 00:04:35 | WARNING  | src.utils.aqi_calculator | Concentration 433.07 exceeds breakpoint table max
+2026-05-01 00:04:37 | WARNING  | src.utils.aqi_calculator | Concentration 432.91 exceeds breakpoint table max
+2026-05-01 00:04:39 | WARNING  | src.utils.aqi_calculator | Concentration 429.52 exceeds breakpoint table max
+2026-05-01 00:04:41 | WARNING  | src.utils.aqi_calculator | Concentration 431.78 exceeds breakpoint table max
+2026-05-01 00:04:43 | WARNING  | src.utils.aqi_calculator | Concentration 433.23 exceeds breakpoint table max
+2026-05-01 00:04:45 | WARNING  | src.utils.aqi_calculator | Concentration 432.75 exceeds breakpoint table max
+2026-05-01 00:04:47 | WARNING  | src.utils.aqi_calculator | Concentration 432.42 exceeds breakpoint table max
+2026-05-01 00:04:49 | WARNING  | src.utils.aqi_calculator | Concentration 432.91 exceeds breakpoint table max
+2026-05-01 00:04:51 | WARNING  | src.utils.aqi_calculator | Concentration 430.81 exceeds breakpoint table max
+2026-05-01 00:04:53 | WARNING  | src.utils.aqi_calculator | Concentration 432.75 exceeds breakpoint table max
+2026-05-01 00:04:55 | WARNING  | src.utils.aqi_calculator | Concentration 432.75 exceeds breakpoint table max
+2026-05-01 00:04:57 | WARNING  | src.utils.aqi_calculator | Concentration 432.91 exceeds breakpoint table max
+2026-05-01 00:04:59 | WARNING  | src.utils.aqi_calculator | Concentration 431.62 exceeds breakpoint table max
+2026-05-01 00:05:01 | WARNING  | src.utils.aqi_calculator | Concentration 431.46 exceeds breakpoint table max
+2026-05-01 00:05:03 | WARNING  | src.utils.aqi_calculator | Concentration 431.62 exceeds breakpoint table max
+2026-05-01 00:05:05 | WARNING  | src.utils.aqi_calculator | Concentration 432.42 exceeds breakpoint table max
+2026-05-01 00:05:07 | WARNING  | src.utils.aqi_calculator | Concentration 432.10 exceeds breakpoint table max
+2026-05-01 00:05:09 | WARNING  | src.utils.aqi_calculator | Concentration 432.10 exceeds breakpoint table max
+2026-05-01 00:05:11 | WARNING  | src.utils.aqi_calculator | Concentration 430.97 exceeds breakpoint table max
+2026-05-01 00:05:13 | WARNING  | src.utils.aqi_calculator | Concentration 433.07 exceeds breakpoint table max
+2026-05-01 00:05:15 | WARNING  | src.utils.aqi_calculator | Concentration 433.39 exceeds breakpoint table max
+2026-05-01 00:05:17 | WARNING  | src.utils.aqi_calculator | Concentration 433.23 exceeds breakpoint table max
+2026-05-01 00:05:19 | WARNING  | src.utils.aqi_calculator | Concentration 433.23 exceeds breakpoint table max
+2026-05-01 00:05:21 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:05:23 | WARNING  | src.utils.aqi_calculator | Concentration 432.75 exceeds breakpoint table max
+2026-05-01 00:05:25 | WARNING  | src.utils.aqi_calculator | Concentration 432.26 exceeds breakpoint table max
+2026-05-01 00:05:27 | WARNING  | src.utils.aqi_calculator | Concentration 432.26 exceeds breakpoint table max
+2026-05-01 00:05:29 | WARNING  | src.utils.aqi_calculator | Concentration 431.62 exceeds breakpoint table max
+2026-05-01 00:05:31 | WARNING  | src.utils.aqi_calculator | Concentration 430.81 exceeds breakpoint table max
+2026-05-01 00:05:33 | WARNING  | src.utils.aqi_calculator | Concentration 431.62 exceeds breakpoint table max
+2026-05-01 00:05:35 | WARNING  | src.utils.aqi_calculator | Concentration 431.46 exceeds breakpoint table max
+2026-05-01 00:05:37 | WARNING  | src.utils.aqi_calculator | Concentration 431.46 exceeds breakpoint table max
+2026-05-01 00:05:39 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:05:41 | WARNING  | src.utils.aqi_calculator | Concentration 430.49 exceeds breakpoint table max
+2026-05-01 00:05:43 | WARNING  | src.utils.aqi_calculator | Concentration 430.17 exceeds breakpoint table max
+2026-05-01 00:05:45 | WARNING  | src.utils.aqi_calculator | Concentration 431.14 exceeds breakpoint table max
+2026-05-01 00:05:47 | WARNING  | src.utils.aqi_calculator | Concentration 430.97 exceeds breakpoint table max
+2026-05-01 00:05:49 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:05:51 | WARNING  | src.utils.aqi_calculator | Concentration 430.17 exceeds breakpoint table max
+2026-05-01 00:05:53 | WARNING  | src.utils.aqi_calculator | Concentration 431.14 exceeds breakpoint table max
+2026-05-01 00:05:55 | WARNING  | src.utils.aqi_calculator | Concentration 431.30 exceeds breakpoint table max
+2026-05-01 00:05:57 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:05:59 | WARNING  | src.utils.aqi_calculator | Concentration 430.97 exceeds breakpoint table max
+2026-05-01 00:06:01 | WARNING  | src.utils.aqi_calculator | Concentration 430.17 exceeds breakpoint table max
+2026-05-01 00:06:03 | WARNING  | src.utils.aqi_calculator | Concentration 430.97 exceeds breakpoint table max
+2026-05-01 00:06:03 | INFO     | src.processing.data_processor | Processed: 100 | Rejected: 0 | AQI: 500.0 (Hazardous)
+2026-05-01 00:06:05 | WARNING  | src.utils.aqi_calculator | Concentration 431.14 exceeds breakpoint table max
+2026-05-01 00:06:07 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:06:09 | WARNING  | src.utils.aqi_calculator | Concentration 430.81 exceeds breakpoint table max
+2026-05-01 00:06:11 | WARNING  | src.utils.aqi_calculator | Concentration 430.17 exceeds breakpoint table max
+2026-05-01 00:06:13 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:06:15 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:06:17 | WARNING  | src.utils.aqi_calculator | Concentration 430.17 exceeds breakpoint table max
+2026-05-01 00:06:19 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:06:21 | WARNING  | src.utils.aqi_calculator | Concentration 429.52 exceeds breakpoint table max
+2026-05-01 00:06:23 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:06:25 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:06:27 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:06:29 | WARNING  | src.utils.aqi_calculator | Concentration 430.01 exceeds breakpoint table max
+2026-05-01 00:06:31 | WARNING  | src.utils.aqi_calculator | Concentration 428.88 exceeds breakpoint table max
+2026-05-01 00:06:33 | WARNING  | src.utils.aqi_calculator | Concentration 430.49 exceeds breakpoint table max
+2026-05-01 00:06:35 | WARNING  | src.utils.aqi_calculator | Concentration 429.52 exceeds breakpoint table max
+2026-05-01 00:06:37 | WARNING  | src.utils.aqi_calculator | Concentration 430.01 exceeds breakpoint table max
+2026-05-01 00:06:39 | WARNING  | src.utils.aqi_calculator | Concentration 430.17 exceeds breakpoint table max
+2026-05-01 00:06:41 | WARNING  | src.utils.aqi_calculator | Concentration 428.40 exceeds breakpoint table max
+2026-05-01 00:06:43 | WARNING  | src.utils.aqi_calculator | Concentration 429.20 exceeds breakpoint table max
+2026-05-01 00:06:45 | WARNING  | src.utils.aqi_calculator | Concentration 429.04 exceeds breakpoint table max
+2026-05-01 00:06:47 | WARNING  | src.utils.aqi_calculator | Concentration 429.20 exceeds breakpoint table max
+2026-05-01 00:06:49 | WARNING  | src.utils.aqi_calculator | Concentration 429.04 exceeds breakpoint table max
+2026-05-01 00:06:51 | WARNING  | src.utils.aqi_calculator | Concentration 427.27 exceeds breakpoint table max
+2026-05-01 00:06:53 | WARNING  | src.utils.aqi_calculator | Concentration 429.04 exceeds breakpoint table max
+2026-05-01 00:06:55 | WARNING  | src.utils.aqi_calculator | Concentration 429.04 exceeds breakpoint table max
+2026-05-01 00:06:57 | WARNING  | src.utils.aqi_calculator | Concentration 428.07 exceeds breakpoint table max
+2026-05-01 00:06:59 | WARNING  | src.utils.aqi_calculator | Concentration 429.85 exceeds breakpoint table max
+2026-05-01 00:07:01 | WARNING  | src.utils.aqi_calculator | Concentration 427.75 exceeds breakpoint table max
+2026-05-01 00:07:03 | WARNING  | src.utils.aqi_calculator | Concentration 428.56 exceeds breakpoint table max
+2026-05-01 00:07:05 | WARNING  | src.utils.aqi_calculator | Concentration 429.04 exceeds breakpoint table max
+2026-05-01 00:07:07 | WARNING  | src.utils.aqi_calculator | Concentration 429.36 exceeds breakpoint table max
+2026-05-01 00:07:09 | WARNING  | src.utils.aqi_calculator | Concentration 428.56 exceeds breakpoint table max
+2026-05-01 00:07:11 | WARNING  | src.utils.aqi_calculator | Concentration 427.27 exceeds breakpoint table max
+2026-05-01 00:07:13 | WARNING  | src.utils.aqi_calculator | Concentration 428.72 exceeds breakpoint table max
+2026-05-01 00:07:15 | WARNING  | src.utils.aqi_calculator | Concentration 428.40 exceeds breakpoint table max
+2026-05-01 00:07:17 | WARNING  | src.utils.aqi_calculator | Concentration 428.56 exceeds breakpoint table max
+2026-05-01 00:07:19 | WARNING  | src.utils.aqi_calculator | Concentration 429.04 exceeds breakpoint table max
+2026-05-01 00:07:21 | WARNING  | src.utils.aqi_calculator | Concentration 426.46 exceeds breakpoint table max
+2026-05-01 00:07:23 | WARNING  | src.utils.aqi_calculator | Concentration 428.72 exceeds breakpoint table max
+2026-05-01 00:07:25 | WARNING  | src.utils.aqi_calculator | Concentration 428.56 exceeds breakpoint table max
+2026-05-01 00:07:27 | WARNING  | src.utils.aqi_calculator | Concentration 428.07 exceeds breakpoint table max
+2026-05-01 00:07:29 | WARNING  | src.utils.aqi_calculator | Concentration 428.72 exceeds breakpoint table max
+2026-05-01 00:07:31 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:07:33 | WARNING  | src.utils.aqi_calculator | Concentration 428.40 exceeds breakpoint table max
+2026-05-01 00:07:35 | WARNING  | src.utils.aqi_calculator | Concentration 428.23 exceeds breakpoint table max
+2026-05-01 00:07:37 | WARNING  | src.utils.aqi_calculator | Concentration 428.88 exceeds breakpoint table max
+2026-05-01 00:07:39 | WARNING  | src.utils.aqi_calculator | Concentration 428.23 exceeds breakpoint table max
+2026-05-01 00:07:41 | WARNING  | src.utils.aqi_calculator | Concentration 427.11 exceeds breakpoint table max
+2026-05-01 00:07:43 | WARNING  | src.utils.aqi_calculator | Concentration 428.07 exceeds breakpoint table max
+2026-05-01 00:07:45 | WARNING  | src.utils.aqi_calculator | Concentration 427.75 exceeds breakpoint table max
+2026-05-01 00:07:47 | WARNING  | src.utils.aqi_calculator | Concentration 428.40 exceeds breakpoint table max
+2026-05-01 00:07:49 | WARNING  | src.utils.aqi_calculator | Concentration 428.40 exceeds breakpoint table max
+2026-05-01 00:07:51 | WARNING  | src.utils.aqi_calculator | Concentration 428.07 exceeds breakpoint table max
+2026-05-01 00:07:53 | WARNING  | src.utils.aqi_calculator | Concentration 428.88 exceeds breakpoint table max
+2026-05-01 00:07:55 | WARNING  | src.utils.aqi_calculator | Concentration 426.30 exceeds breakpoint table max
+2026-05-01 00:07:57 | WARNING  | src.utils.aqi_calculator | Concentration 428.23 exceeds breakpoint table max
+2026-05-01 00:07:59 | WARNING  | src.utils.aqi_calculator | Concentration 427.75 exceeds breakpoint table max
+2026-05-01 00:08:01 | WARNING  | src.utils.aqi_calculator | Concentration 426.78 exceeds breakpoint table max
+2026-05-01 00:08:03 | WARNING  | src.utils.aqi_calculator | Concentration 426.95 exceeds breakpoint table max
+2026-05-01 00:08:05 | WARNING  | src.utils.aqi_calculator | Concentration 427.91 exceeds breakpoint table max
+2026-05-01 00:08:07 | WARNING  | src.utils.aqi_calculator | Concentration 427.11 exceeds breakpoint table max
+2026-05-01 00:08:09 | WARNING  | src.utils.aqi_calculator | Concentration 426.95 exceeds breakpoint table max
+2026-05-01 00:08:11 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:08:13 | WARNING  | src.utils.aqi_calculator | Concentration 426.46 exceeds breakpoint table max
+2026-05-01 00:08:15 | WARNING  | src.utils.aqi_calculator | Concentration 426.46 exceeds breakpoint table max
+2026-05-01 00:08:17 | WARNING  | src.utils.aqi_calculator | Concentration 426.46 exceeds breakpoint table max
+2026-05-01 00:08:19 | WARNING  | src.utils.aqi_calculator | Concentration 426.62 exceeds breakpoint table max
+2026-05-01 00:08:21 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:08:23 | WARNING  | src.utils.aqi_calculator | Concentration 426.95 exceeds breakpoint table max
+2026-05-01 00:08:25 | WARNING  | src.utils.aqi_calculator | Concentration 427.91 exceeds breakpoint table max
+2026-05-01 00:08:27 | WARNING  | src.utils.aqi_calculator | Concentration 427.27 exceeds breakpoint table max
+2026-05-01 00:08:29 | WARNING  | src.utils.aqi_calculator | Concentration 427.11 exceeds breakpoint table max
+2026-05-01 00:08:31 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:08:33 | WARNING  | src.utils.aqi_calculator | Concentration 425.98 exceeds breakpoint table max
+2026-05-01 00:08:35 | WARNING  | src.utils.aqi_calculator | Concentration 427.11 exceeds breakpoint table max
+2026-05-01 00:08:37 | WARNING  | src.utils.aqi_calculator | Concentration 425.82 exceeds breakpoint table max
+2026-05-01 00:08:39 | WARNING  | src.utils.aqi_calculator | Concentration 427.43 exceeds breakpoint table max
+2026-05-01 00:08:41 | WARNING  | src.utils.aqi_calculator | Concentration 425.33 exceeds breakpoint table max
+2026-05-01 00:08:43 | WARNING  | src.utils.aqi_calculator | Concentration 426.46 exceeds breakpoint table max
+2026-05-01 00:08:45 | WARNING  | src.utils.aqi_calculator | Concentration 426.46 exceeds breakpoint table max
+2026-05-01 00:08:47 | WARNING  | src.utils.aqi_calculator | Concentration 426.30 exceeds breakpoint table max
+2026-05-01 00:08:49 | WARNING  | src.utils.aqi_calculator | Concentration 425.66 exceeds breakpoint table max
+2026-05-01 00:08:51 | WARNING  | src.utils.aqi_calculator | Concentration 425.01 exceeds breakpoint table max
+2026-05-01 00:08:53 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:08:55 | WARNING  | src.utils.aqi_calculator | Concentration 425.66 exceeds breakpoint table max
+2026-05-01 00:08:57 | WARNING  | src.utils.aqi_calculator | Concentration 425.82 exceeds breakpoint table max
+2026-05-01 00:08:59 | WARNING  | src.utils.aqi_calculator | Concentration 424.04 exceeds breakpoint table max
+2026-05-01 00:09:01 | WARNING  | src.utils.aqi_calculator | Concentration 424.53 exceeds breakpoint table max
+2026-05-01 00:09:03 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:09:05 | WARNING  | src.utils.aqi_calculator | Concentration 425.98 exceeds breakpoint table max
+2026-05-01 00:09:07 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:09:09 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:09:11 | WARNING  | src.utils.aqi_calculator | Concentration 424.37 exceeds breakpoint table max
+2026-05-01 00:09:13 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:09:15 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:09:17 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:09:19 | WARNING  | src.utils.aqi_calculator | Concentration 424.69 exceeds breakpoint table max
+2026-05-01 00:09:21 | WARNING  | src.utils.aqi_calculator | Concentration 423.40 exceeds breakpoint table max
+2026-05-01 00:09:23 | WARNING  | src.utils.aqi_calculator | Concentration 425.17 exceeds breakpoint table max
+2026-05-01 00:09:23 | INFO     | src.processing.data_processor | Processed: 200 | Rejected: 0 | AQI: 500.0 (Hazardous)
+2026-05-01 00:09:25 | WARNING  | src.utils.aqi_calculator | Concentration 425.17 exceeds breakpoint table max
+2026-05-01 00:09:27 | WARNING  | src.utils.aqi_calculator | Concentration 425.33 exceeds breakpoint table max
+2026-05-01 00:09:29 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:09:31 | WARNING  | src.utils.aqi_calculator | Concentration 423.56 exceeds breakpoint table max
+2026-05-01 00:09:33 | WARNING  | src.utils.aqi_calculator | Concentration 423.88 exceeds breakpoint table max
+2026-05-01 00:09:35 | WARNING  | src.utils.aqi_calculator | Concentration 425.66 exceeds breakpoint table max
+2026-05-01 00:09:37 | WARNING  | src.utils.aqi_calculator | Concentration 424.69 exceeds breakpoint table max
+2026-05-01 00:09:39 | WARNING  | src.utils.aqi_calculator | Concentration 424.04 exceeds breakpoint table max
+2026-05-01 00:09:41 | WARNING  | src.utils.aqi_calculator | Concentration 423.72 exceeds breakpoint table max
+2026-05-01 00:09:43 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:09:45 | WARNING  | src.utils.aqi_calculator | Concentration 425.66 exceeds breakpoint table max
+2026-05-01 00:09:47 | WARNING  | src.utils.aqi_calculator | Concentration 425.17 exceeds breakpoint table max
+2026-05-01 00:09:49 | WARNING  | src.utils.aqi_calculator | Concentration 424.85 exceeds breakpoint table max
+2026-05-01 00:09:51 | WARNING  | src.utils.aqi_calculator | Concentration 421.14 exceeds breakpoint table max
+2026-05-01 00:09:53 | WARNING  | src.utils.aqi_calculator | Concentration 425.17 exceeds breakpoint table max
+2026-05-01 00:09:55 | WARNING  | src.utils.aqi_calculator | Concentration 424.69 exceeds breakpoint table max
+2026-05-01 00:09:57 | WARNING  | src.utils.aqi_calculator | Concentration 425.17 exceeds breakpoint table max
+2026-05-01 00:09:59 | WARNING  | src.utils.aqi_calculator | Concentration 425.33 exceeds breakpoint table max
+2026-05-01 00:10:01 | WARNING  | src.utils.aqi_calculator | Concentration 424.04 exceeds breakpoint table max
+2026-05-01 00:10:03 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:10:05 | WARNING  | src.utils.aqi_calculator | Concentration 423.40 exceeds breakpoint table max
+2026-05-01 00:10:07 | WARNING  | src.utils.aqi_calculator | Concentration 423.08 exceeds breakpoint table max
+2026-05-01 00:10:09 | WARNING  | src.utils.aqi_calculator | Concentration 424.69 exceeds breakpoint table max
+2026-05-01 00:10:11 | WARNING  | src.utils.aqi_calculator | Concentration 423.08 exceeds breakpoint table max
+2026-05-01 00:10:13 | WARNING  | src.utils.aqi_calculator | Concentration 424.69 exceeds breakpoint table max
+2026-05-01 00:10:15 | WARNING  | src.utils.aqi_calculator | Concentration 425.17 exceeds breakpoint table max
+2026-05-01 00:10:17 | WARNING  | src.utils.aqi_calculator | Concentration 424.53 exceeds breakpoint table max
+2026-05-01 00:10:19 | WARNING  | src.utils.aqi_calculator | Concentration 424.37 exceeds breakpoint table max
+2026-05-01 00:10:21 | WARNING  | src.utils.aqi_calculator | Concentration 422.92 exceeds breakpoint table max
+2026-05-01 00:10:23 | WARNING  | src.utils.aqi_calculator | Concentration 424.37 exceeds breakpoint table max
+2026-05-01 00:10:25 | WARNING  | src.utils.aqi_calculator | Concentration 424.53 exceeds breakpoint table max
+2026-05-01 00:10:27 | WARNING  | src.utils.aqi_calculator | Concentration 424.04 exceeds breakpoint table max
+2026-05-01 00:10:29 | WARNING  | src.utils.aqi_calculator | Concentration 423.88 exceeds breakpoint table max
+2026-05-01 00:10:31 | WARNING  | src.utils.aqi_calculator | Concentration 422.59 exceeds breakpoint table max
+2026-05-01 00:10:33 | WARNING  | src.utils.aqi_calculator | Concentration 424.37 exceeds breakpoint table max
+2026-05-01 00:10:35 | WARNING  | src.utils.aqi_calculator | Concentration 424.04 exceeds breakpoint table max
+2026-05-01 00:10:37 | WARNING  | src.utils.aqi_calculator | Concentration 422.59 exceeds breakpoint table max
+2026-05-01 00:10:39 | WARNING  | src.utils.aqi_calculator | Concentration 423.56 exceeds breakpoint table max
+2026-05-01 00:10:41 | WARNING  | src.utils.aqi_calculator | Concentration 423.24 exceeds breakpoint table max
+2026-05-01 00:10:43 | WARNING  | src.utils.aqi_calculator | Concentration 423.08 exceeds breakpoint table max
+2026-05-01 00:10:45 | WARNING  | src.utils.aqi_calculator | Concentration 424.04 exceeds breakpoint table max
+2026-05-01 00:10:47 | WARNING  | src.utils.aqi_calculator | Concentration 423.40 exceeds breakpoint table max
+2026-05-01 00:10:49 | WARNING  | src.utils.aqi_calculator | Concentration 424.37 exceeds breakpoint table max
+2026-05-01 00:10:51 | WARNING  | src.utils.aqi_calculator | Concentration 423.24 exceeds breakpoint table max
+2026-05-01 00:10:53 | WARNING  | src.utils.aqi_calculator | Concentration 422.92 exceeds breakpoint table max
+2026-05-01 00:10:55 | WARNING  | src.utils.aqi_calculator | Concentration 423.24 exceeds breakpoint table max
+2026-05-01 00:10:57 | WARNING  | src.utils.aqi_calculator | Concentration 423.72 exceeds breakpoint table max
+2026-05-01 00:10:59 | WARNING  | src.utils.aqi_calculator | Concentration 424.37 exceeds breakpoint table max
+2026-05-01 00:11:01 | WARNING  | src.utils.aqi_calculator | Concentration 423.56 exceeds breakpoint table max
+2026-05-01 00:11:03 | WARNING  | src.utils.aqi_calculator | Concentration 425.01 exceeds breakpoint table max
+2026-05-01 00:11:05 | WARNING  | src.utils.aqi_calculator | Concentration 424.69 exceeds breakpoint table max
+2026-05-01 00:11:07 | WARNING  | src.utils.aqi_calculator | Concentration 424.04 exceeds breakpoint table max
+2026-05-01 00:11:09 | WARNING  | src.utils.aqi_calculator | Concentration 423.40 exceeds breakpoint table max
+2026-05-01 00:11:11 | WARNING  | src.utils.aqi_calculator | Concentration 422.27 exceeds breakpoint table max
+2026-05-01 00:11:13 | WARNING  | src.utils.aqi_calculator | Concentration 423.08 exceeds breakpoint table max
+2026-05-01 00:11:15 | WARNING  | src.utils.aqi_calculator | Concentration 423.88 exceeds breakpoint table max
+2026-05-01 00:11:17 | WARNING  | src.utils.aqi_calculator | Concentration 423.08 exceeds breakpoint table max
+2026-05-01 00:11:19 | WARNING  | src.utils.aqi_calculator | Concentration 423.72 exceeds breakpoint table max
+2026-05-01 00:11:21 | WARNING  | src.utils.aqi_calculator | Concentration 422.59 exceeds breakpoint table max
+2026-05-01 00:11:23 | WARNING  | src.utils.aqi_calculator | Concentration 423.72 exceeds breakpoint table max
+2026-05-01 00:11:25 | WARNING  | src.utils.aqi_calculator | Concentration 424.37 exceeds breakpoint table max
+2026-05-01 00:11:27 | WARNING  | src.utils.aqi_calculator | Concentration 423.24 exceeds breakpoint table max
+2026-05-01 00:11:29 | WARNING  | src.utils.aqi_calculator | Concentration 423.88 exceeds breakpoint table max
+2026-05-01 00:11:31 | WARNING  | src.utils.aqi_calculator | Concentration 422.59 exceeds breakpoint table max
+2026-05-01 00:11:33 | WARNING  | src.utils.aqi_calculator | Concentration 424.04 exceeds breakpoint table max
+2026-05-01 00:11:35 | WARNING  | src.utils.aqi_calculator | Concentration 424.37 exceeds breakpoint table max
+2026-05-01 00:11:37 | WARNING  | src.utils.aqi_calculator | Concentration 423.72 exceeds breakpoint table max
+2026-05-01 00:11:39 | WARNING  | src.utils.aqi_calculator | Concentration 423.72 exceeds breakpoint table max
+2026-05-01 00:11:41 | WARNING  | src.utils.aqi_calculator | Concentration 423.40 exceeds breakpoint table max
+2026-05-01 00:11:43 | WARNING  | src.utils.aqi_calculator | Concentration 423.72 exceeds breakpoint table max
+2026-05-01 00:11:45 | WARNING  | src.utils.aqi_calculator | Concentration 424.04 exceeds breakpoint table max
+2026-05-01 00:11:47 | WARNING  | src.utils.aqi_calculator | Concentration 423.24 exceeds breakpoint table max
+2026-05-01 00:11:49 | WARNING  | src.utils.aqi_calculator | Concentration 423.40 exceeds breakpoint table max
+2026-05-01 00:11:51 | WARNING  | src.utils.aqi_calculator | Concentration 422.92 exceeds breakpoint table max
+2026-05-01 00:11:53 | WARNING  | src.utils.aqi_calculator | Concentration 423.40 exceeds breakpoint table max
+2026-05-01 00:11:55 | WARNING  | src.utils.aqi_calculator | Concentration 422.43 exceeds breakpoint table max
+2026-05-01 00:11:57 | WARNING  | src.utils.aqi_calculator | Concentration 423.40 exceeds breakpoint table max
+2026-05-01 00:11:59 | WARNING  | src.utils.aqi_calculator | Concentration 423.08 exceeds breakpoint table max
+2026-05-01 00:12:01 | WARNING  | src.utils.aqi_calculator | Concentration 422.11 exceeds breakpoint table max
+2026-05-01 00:12:03 | WARNING  | src.utils.aqi_calculator | Concentration 422.92 exceeds breakpoint table max
+2026-05-01 00:12:05 | WARNING  | src.utils.aqi_calculator | Concentration 422.92 exceeds breakpoint table max
+2026-05-01 00:12:07 | WARNING  | src.utils.aqi_calculator | Concentration 422.75 exceeds breakpoint table max
+2026-05-01 00:12:09 | WARNING  | src.utils.aqi_calculator | Concentration 422.59 exceeds breakpoint table max
+2026-05-01 00:12:11 | WARNING  | src.utils.aqi_calculator | Concentration 421.30 exceeds breakpoint table max
+2026-05-01 00:12:13 | WARNING  | src.utils.aqi_calculator | Concentration 422.92 exceeds breakpoint table max
+2026-05-01 00:12:15 | WARNING  | src.utils.aqi_calculator | Concentration 420.66 exceeds breakpoint table max
+2026-05-01 00:12:17 | WARNING  | src.utils.aqi_calculator | Concentration 422.59 exceeds breakpoint table max
+2026-05-01 00:12:19 | WARNING  | src.utils.aqi_calculator | Concentration 422.43 exceeds breakpoint table max
+2026-05-01 00:12:21 | WARNING  | src.utils.aqi_calculator | Concentration 421.79 exceeds breakpoint table max
+2026-05-01 00:12:23 | WARNING  | src.utils.aqi_calculator | Concentration 421.47 exceeds breakpoint table max
+2026-05-01 00:12:25 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:12:27 | WARNING  | src.utils.aqi_calculator | Concentration 422.59 exceeds breakpoint table max
+2026-05-01 00:12:29 | WARNING  | src.utils.aqi_calculator | Concentration 421.47 exceeds breakpoint table max
+2026-05-01 00:12:31 | WARNING  | src.utils.aqi_calculator | Concentration 420.01 exceeds breakpoint table max
+2026-05-01 00:12:33 | WARNING  | src.utils.aqi_calculator | Concentration 421.30 exceeds breakpoint table max
+2026-05-01 00:12:35 | WARNING  | src.utils.aqi_calculator | Concentration 420.98 exceeds breakpoint table max
+2026-05-01 00:12:37 | WARNING  | src.utils.aqi_calculator | Concentration 420.98 exceeds breakpoint table max
+2026-05-01 00:12:39 | WARNING  | src.utils.aqi_calculator | Concentration 421.14 exceeds breakpoint table max
+2026-05-01 00:12:41 | WARNING  | src.utils.aqi_calculator | Concentration 420.82 exceeds breakpoint table max
+2026-05-01 00:12:43 | WARNING  | src.utils.aqi_calculator | Concentration 422.92 exceeds breakpoint table max
+2026-05-01 00:12:43 | INFO     | src.processing.data_processor | Processed: 300 | Rejected: 0 | AQI: 500.0 (Hazardous)
+2026-05-01 00:12:45 | WARNING  | src.utils.aqi_calculator | Concentration 421.95 exceeds breakpoint table max
+2026-05-01 00:12:47 | WARNING  | src.utils.aqi_calculator | Concentration 421.79 exceeds breakpoint table max
+2026-05-01 00:12:49 | WARNING  | src.utils.aqi_calculator | Concentration 423.56 exceeds breakpoint table max
+2026-05-01 00:12:51 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:12:53 | WARNING  | src.utils.aqi_calculator | Concentration 420.66 exceeds breakpoint table max
+2026-05-01 00:12:55 | WARNING  | src.utils.aqi_calculator | Concentration 419.21 exceeds breakpoint table max
+2026-05-01 00:12:57 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:12:59 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:01 | WARNING  | src.utils.aqi_calculator | Concentration 419.53 exceeds breakpoint table max
+2026-05-01 00:13:03 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:05 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:07 | WARNING  | src.utils.aqi_calculator | Concentration 420.50 exceeds breakpoint table max
+2026-05-01 00:13:09 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:11 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:13 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:15 | WARNING  | src.utils.aqi_calculator | Concentration 420.01 exceeds breakpoint table max
+2026-05-01 00:13:17 | WARNING  | src.utils.aqi_calculator | Concentration 419.85 exceeds breakpoint table max
+2026-05-01 00:13:19 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:21 | WARNING  | src.utils.aqi_calculator | Concentration 419.21 exceeds breakpoint table max
+2026-05-01 00:13:23 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:25 | WARNING  | src.utils.aqi_calculator | Concentration 419.21 exceeds breakpoint table max
+2026-05-01 00:13:27 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:29 | WARNING  | src.utils.aqi_calculator | Concentration 421.95 exceeds breakpoint table max
+2026-05-01 00:13:31 | WARNING  | src.utils.aqi_calculator | Concentration 419.53 exceeds breakpoint table max
+2026-05-01 00:13:33 | WARNING  | src.utils.aqi_calculator | Concentration 421.14 exceeds breakpoint table max
+2026-05-01 00:13:35 | WARNING  | src.utils.aqi_calculator | Concentration 420.98 exceeds breakpoint table max
+2026-05-01 00:13:37 | WARNING  | src.utils.aqi_calculator | Concentration 420.82 exceeds breakpoint table max
+2026-05-01 00:13:39 | WARNING  | src.utils.aqi_calculator | Concentration 420.66 exceeds breakpoint table max
+2026-05-01 00:13:41 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:43 | WARNING  | src.utils.aqi_calculator | Concentration 420.98 exceeds breakpoint table max
+2026-05-01 00:13:45 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:47 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:49 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:13:51 | WARNING  | src.utils.aqi_calculator | Concentration 419.21 exceeds breakpoint table max
+2026-05-01 00:13:53 | WARNING  | src.utils.aqi_calculator | Concentration 418.24 exceeds breakpoint table max
+2026-05-01 00:13:55 | WARNING  | src.utils.aqi_calculator | Concentration 418.73 exceeds breakpoint table max
+2026-05-01 00:13:57 | WARNING  | src.utils.aqi_calculator | Concentration 418.56 exceeds breakpoint table max
+2026-05-01 00:13:59 | WARNING  | src.utils.aqi_calculator | Concentration 419.85 exceeds breakpoint table max
+2026-05-01 00:14:01 | WARNING  | src.utils.aqi_calculator | Concentration 417.76 exceeds breakpoint table max
+2026-05-01 00:14:03 | WARNING  | src.utils.aqi_calculator | Concentration 419.21 exceeds breakpoint table max
+2026-05-01 00:14:05 | WARNING  | src.utils.aqi_calculator | Concentration 419.53 exceeds breakpoint table max
+2026-05-01 00:14:07 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:14:09 | WARNING  | src.utils.aqi_calculator | Concentration 420.50 exceeds breakpoint table max
+2026-05-01 00:14:11 | WARNING  | src.utils.aqi_calculator | Concentration 419.37 exceeds breakpoint table max
+2026-05-01 00:14:13 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:14:15 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:14:17 | WARNING  | src.utils.aqi_calculator | Concentration 419.85 exceeds breakpoint table max
+2026-05-01 00:14:19 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:14:21 | WARNING  | src.utils.aqi_calculator | Concentration 418.56 exceeds breakpoint table max
+2026-05-01 00:14:23 | WARNING  | src.utils.aqi_calculator | Concentration 420.18 exceeds breakpoint table max
+2026-05-01 00:14:27 | WARNING  | src.utils.aqi_calculator | Concentration 419.53 exceeds breakpoint table max
+2026-05-01 00:14:27 | WARNING  | src.utils.aqi_calculator | Concentration 425.49 exceeds breakpoint table max
+2026-05-01 00:14:29 | WARNING  | src.utils.aqi_calculator | Concentration 419.53 exceeds breakpoint table max
+2026-05-01 00:14:31 | WARNING  | src.utils.aqi_calculator | Concentration 418.40 exceeds breakpoint table max
+2026-05-01 00:14:33 | WARNING  | src.utils.aqi_calculator | Concentration 420.18 exceeds breakpoint table max
+2026-05-01 00:14:35 | WARNING  | src.utils.aqi_calculator | Concentration 419.69 exceeds breakpoint table max
+2026-05-01 00:14:37 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:14:39 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:14:41 | WARNING  | src.utils.aqi_calculator | Concentration 419.37 exceeds breakpoint table max
+2026-05-01 00:14:43 | WARNING  | src.utils.aqi_calculator | Concentration 420.18 exceeds breakpoint table max
+2026-05-01 00:14:45 | WARNING  | src.utils.aqi_calculator | Concentration 420.01 exceeds breakpoint table max
+2026-05-01 00:14:47 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:14:49 | WARNING  | src.utils.aqi_calculator | Concentration 419.53 exceeds breakpoint table max
+2026-05-01 00:14:51 | WARNING  | src.utils.aqi_calculator | Concentration 418.08 exceeds breakpoint table max
+2026-05-01 00:14:53 | WARNING  | src.utils.aqi_calculator | Concentration 419.37 exceeds breakpoint table max
+2026-05-01 00:14:55 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:14:57 | WARNING  | src.utils.aqi_calculator | Concentration 418.24 exceeds breakpoint table max
+2026-05-01 00:14:59 | WARNING  | src.utils.aqi_calculator | Concentration 419.21 exceeds breakpoint table max
+2026-05-01 00:15:01 | WARNING  | src.utils.aqi_calculator | Concentration 417.92 exceeds breakpoint table max
+2026-05-01 00:15:03 | WARNING  | src.utils.aqi_calculator | Concentration 419.85 exceeds breakpoint table max
+2026-05-01 00:15:05 | WARNING  | src.utils.aqi_calculator | Concentration 419.37 exceeds breakpoint table max
+2026-05-01 00:15:07 | WARNING  | src.utils.aqi_calculator | Concentration 419.53 exceeds breakpoint table max
+2026-05-01 00:15:09 | WARNING  | src.utils.aqi_calculator | Concentration 418.89 exceeds breakpoint table max
+2026-05-01 00:15:11 | WARNING  | src.utils.aqi_calculator | Concentration 418.56 exceeds breakpoint table max
+2026-05-01 00:15:13 | WARNING  | src.utils.aqi_calculator | Concentration 419.21 exceeds breakpoint table max
+2026-05-01 00:15:15 | WARNING  | src.utils.aqi_calculator | Concentration 419.53 exceeds breakpoint table max
+2026-05-01 00:15:17 | WARNING  | src.utils.aqi_calculator | Concentration 419.53 exceeds breakpoint table max
+2026-05-01 00:15:19 | WARNING  | src.utils.aqi_calculator | Concentration 419.05 exceeds breakpoint table max
+2026-05-01 00:15:21 | WARNING  | src.utils.aqi_calculator | Concentration 417.27 exceeds breakpoint table max
+2026-05-01 00:15:23 | WARNING  | src.utils.aqi_calculator | Concentration 418.73 exceeds breakpoint table max
+2026-05-01 00:15:25 | WARNING  | src.utils.aqi_calculator | Concentration 418.56 exceeds breakpoint table max
+2026-05-01 00:15:27 | WARNING  | src.utils.aqi_calculator | Concentration 418.73 exceeds breakpoint table max
+2026-05-01 00:15:29 | WARNING  | src.utils.aqi_calculator | Concentration 417.92 exceeds breakpoint table max
+2026-05-01 00:15:31 | WARNING  | src.utils.aqi_calculator | Concentration 416.95 exceeds breakpoint table max
+2026-05-01 00:15:33 | WARNING  | src.utils.aqi_calculator | Concentration 419.21 exceeds breakpoint table max
+2026-05-01 00:15:35 | WARNING  | src.utils.aqi_calculator | Concentration 418.40 exceeds breakpoint table max
+2026-05-01 00:15:37 | WARNING  | src.utils.aqi_calculator | Concentration 418.24 exceeds breakpoint table max
+2026-05-01 00:15:39 | WARNING  | src.utils.aqi_calculator | Concentration 418.73 exceeds breakpoint table max
+2026-05-01 00:15:41 | WARNING  | src.utils.aqi_calculator | Concentration 417.44 exceeds breakpoint table max
+2026-05-01 00:15:43 | WARNING  | src.utils.aqi_calculator | Concentration 417.92 exceeds breakpoint table max
+2026-05-01 00:15:45 | WARNING  | src.utils.aqi_calculator | Concentration 418.24 exceeds breakpoint table max
+2026-05-01 00:15:47 | WARNING  | src.utils.aqi_calculator | Concentration 409.22 exceeds breakpoint table max
+2026-05-01 00:15:49 | WARNING  | src.utils.aqi_calculator | Concentration 417.76 exceeds breakpoint table max
+2026-05-01 00:15:51 | WARNING  | src.utils.aqi_calculator | Concentration 416.31 exceeds breakpoint table max
+2026-05-01 00:15:53 | WARNING  | src.utils.aqi_calculator | Concentration 417.60 exceeds breakpoint table max
+2026-05-01 00:15:55 | WARNING  | src.utils.aqi_calculator | Concentration 417.44 exceeds breakpoint table max
+2026-05-01 00:15:57 | WARNING  | src.utils.aqi_calculator | Concentration 418.24 exceeds breakpoint table max
+2026-05-01 00:15:59 | WARNING  | src.utils.aqi_calculator | Concentration 417.44 exceeds breakpoint table max
+2026-05-01 00:16:01 | WARNING  | src.utils.aqi_calculator | Concentration 417.92 exceeds breakpoint table max
+2026-05-01 00:16:03 | WARNING  | src.utils.aqi_calculator | Concentration 418.24 exceeds breakpoint table max
+2026-05-01 00:16:03 | INFO     | src.processing.data_processor | Processed: 400 | Rejected: 0 | AQI: 500.0 (Hazardous)
+2026-05-01 00:16:05 | WARNING  | src.utils.aqi_calculator | Concentration 412.44 exceeds breakpoint table max
+2026-05-01 00:16:07 | WARNING  | src.utils.aqi_calculator | Concentration 417.44 exceeds breakpoint table max
+2026-05-01 00:16:09 | WARNING  | src.utils.aqi_calculator | Concentration 417.60 exceeds breakpoint table max
+2026-05-01 00:16:11 | WARNING  | src.utils.aqi_calculator | Concentration 416.79 exceeds breakpoint table max
+2026-05-01 00:16:13 | WARNING  | src.utils.aqi_calculator | Concentration 417.60 exceeds breakpoint table max
+2026-05-01 00:16:15 | WARNING  | src.utils.aqi_calculator | Concentration 417.76 exceeds breakpoint table max
+2026-05-01 00:16:17 | WARNING  | src.utils.aqi_calculator | Concentration 420.34 exceeds breakpoint table max
+2026-05-01 00:16:19 | WARNING  | src.utils.aqi_calculator | Concentration 418.08 exceeds breakpoint table max
+2026-05-01 00:16:21 | WARNING  | src.utils.aqi_calculator | Concentration 416.79 exceeds breakpoint table max
+2026-05-01 00:16:23 | WARNING  | src.utils.aqi_calculator | Concentration 417.44 exceeds breakpoint table max
+2026-05-01 00:16:25 | WARNING  | src.utils.aqi_calculator | Concentration 418.08 exceeds breakpoint table max
+2026-05-01 00:16:27 | WARNING  | src.utils.aqi_calculator | Concentration 417.27 exceeds breakpoint table max
+2026-05-01 00:16:29 | WARNING  | src.utils.aqi_calculator | Concentration 417.60 exceeds breakpoint table max
+2026-05-01 00:16:31 | WARNING  | src.utils.aqi_calculator | Concentration 419.85 exceeds breakpoint table max
+2026-05-01 00:16:33 | WARNING  | src.utils.aqi_calculator | Concentration 418.08 exceeds breakpoint table max
+2026-05-01 00:16:35 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:16:37 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:16:39 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:16:41 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:16:43 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:16:45 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:16:47 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:16:49 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:16:51 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:16:53 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:16:55 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:16:57 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:16:59 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:01 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:03 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:05 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:07 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:09 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:11 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:13 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:15 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:17 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:19 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:21 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:23 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:25 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:27 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:29 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:31 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:33 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:35 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:37 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:39 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:41 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:43 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:45 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:47 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:49 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:51 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:53 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:55 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:57 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:17:59 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:01 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:03 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:05 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:07 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:09 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:11 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:13 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:15 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:17 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:19 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:21 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:23 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:25 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:27 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:29 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:31 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:33 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:35 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:37 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:39 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:41 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:43 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:45 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:47 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:49 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:51 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:53 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:55 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:57 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:18:59 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:01 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:03 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:05 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:07 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:09 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:11 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:13 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:15 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:17 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:19 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:21 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:23 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:23 | INFO     | src.processing.data_processor | Processed: 500 | Rejected: 0 | AQI: 500.0 (Hazardous)
+2026-05-01 00:19:25 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:27 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:29 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:31 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:33 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:35 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:37 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:39 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:41 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:43 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:45 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:47 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:49 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:51 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:53 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:55 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:57 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:19:59 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:01 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:03 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:05 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:07 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:09 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:11 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:13 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:15 | WARNING  | src.utils.aqi_calculator | Concentration 382.46 exceeds breakpoint table max
+2026-05-01 00:20:17 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:19 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:21 | WARNING  | src.utils.aqi_calculator | Concentration 375.21 exceeds breakpoint table max
+2026-05-01 00:20:23 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:25 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:29 | WARNING  | src.utils.aqi_calculator | Concentration 374.89 exceeds breakpoint table max
+2026-05-01 00:20:31 | WARNING  | src.utils.aqi_calculator | Concentration 410.51 exceeds breakpoint table max
+2026-05-01 00:20:33 | WARNING  | src.utils.aqi_calculator | Concentration 432.91 exceeds breakpoint table max
+2026-05-01 00:20:35 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:39 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:41 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:43 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:45 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:49 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:51 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:53 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:20:55 | WARNING  | src.utils.aqi_calculator | Concentration 397.29 exceeds breakpoint table max
+2026-05-01 00:20:57 | WARNING  | src.utils.aqi_calculator | Concentration 424.85 exceeds breakpoint table max
+2026-05-01 00:20:59 | WARNING  | src.utils.aqi_calculator | Concentration 437.42 exceeds breakpoint table max
+2026-05-01 00:21:01 | WARNING  | src.utils.aqi_calculator | Concentration 437.58 exceeds breakpoint table max
+2026-05-01 00:21:03 | WARNING  | src.utils.aqi_calculator | Concentration 439.52 exceeds breakpoint table max
+2026-05-01 00:21:05 | WARNING  | src.utils.aqi_calculator | Concentration 439.84 exceeds breakpoint table max
+2026-05-01 00:21:07 | WARNING  | src.utils.aqi_calculator | Concentration 437.90 exceeds breakpoint table max
+2026-05-01 00:21:09 | WARNING  | src.utils.aqi_calculator | Concentration 440.64 exceeds breakpoint table max
+2026-05-01 00:21:11 | WARNING  | src.utils.aqi_calculator | Concentration 435.00 exceeds breakpoint table max
+2026-05-01 00:21:13 | WARNING  | src.utils.aqi_calculator | Concentration 435.65 exceeds breakpoint table max
+2026-05-01 00:21:15 | WARNING  | src.utils.aqi_calculator | Concentration 434.20 exceeds breakpoint table max
+2026-05-01 00:21:17 | WARNING  | src.utils.aqi_calculator | Concentration 434.36 exceeds breakpoint table max
+2026-05-01 00:21:19 | WARNING  | src.utils.aqi_calculator | Concentration 433.88 exceeds breakpoint table max
+2026-05-01 00:21:21 | WARNING  | src.utils.aqi_calculator | Concentration 432.42 exceeds breakpoint table max
+2026-05-01 00:21:23 | WARNING  | src.utils.aqi_calculator | Concentration 432.91 exceeds breakpoint table max
+2026-05-01 00:21:25 | WARNING  | src.utils.aqi_calculator | Concentration 433.39 exceeds breakpoint table max
+2026-05-01 00:21:27 | WARNING  | src.utils.aqi_calculator | Concentration 433.39 exceeds breakpoint table max
+2026-05-01 00:21:29 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:21:31 | WARNING  | src.utils.aqi_calculator | Concentration 431.62 exceeds breakpoint table max
+2026-05-01 00:21:33 | WARNING  | src.utils.aqi_calculator | Concentration 432.26 exceeds breakpoint table max
+2026-05-01 00:21:35 | WARNING  | src.utils.aqi_calculator | Concentration 432.75 exceeds breakpoint table max
+2026-05-01 00:21:37 | WARNING  | src.utils.aqi_calculator | Concentration 431.94 exceeds breakpoint table max
+2026-05-01 00:21:39 | WARNING  | src.utils.aqi_calculator | Concentration 431.78 exceeds breakpoint table max
+2026-05-01 00:21:41 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:21:43 | WARNING  | src.utils.aqi_calculator | Concentration 431.46 exceeds breakpoint table max
+2026-05-01 00:21:45 | WARNING  | src.utils.aqi_calculator | Concentration 431.14 exceeds breakpoint table max
+2026-05-01 00:21:47 | WARNING  | src.utils.aqi_calculator | Concentration 431.46 exceeds breakpoint table max
+2026-05-01 00:21:49 | WARNING  | src.utils.aqi_calculator | Concentration 431.14 exceeds breakpoint table max
+2026-05-01 00:21:51 | WARNING  | src.utils.aqi_calculator | Concentration 430.17 exceeds breakpoint table max
+2026-05-01 00:21:53 | WARNING  | src.utils.aqi_calculator | Concentration 431.46 exceeds breakpoint table max
+2026-05-01 00:21:55 | WARNING  | src.utils.aqi_calculator | Concentration 430.97 exceeds breakpoint table max
+2026-05-01 00:21:57 | WARNING  | src.utils.aqi_calculator | Concentration 431.14 exceeds breakpoint table max
+2026-05-01 00:21:59 | WARNING  | src.utils.aqi_calculator | Concentration 430.97 exceeds breakpoint table max
+2026-05-01 00:22:01 | WARNING  | src.utils.aqi_calculator | Concentration 429.68 exceeds breakpoint table max
+2026-05-01 00:22:03 | WARNING  | src.utils.aqi_calculator | Concentration 429.20 exceeds breakpoint table max
+2026-05-01 00:22:05 | WARNING  | src.utils.aqi_calculator | Concentration 430.81 exceeds breakpoint table max
+2026-05-01 00:22:07 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:22:09 | WARNING  | src.utils.aqi_calculator | Concentration 430.49 exceeds breakpoint table max
+2026-05-01 00:22:11 | WARNING  | src.utils.aqi_calculator | Concentration 429.68 exceeds breakpoint table max
+2026-05-01 00:22:13 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:22:15 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:22:17 | WARNING  | src.utils.aqi_calculator | Concentration 430.33 exceeds breakpoint table max
+2026-05-01 00:22:19 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:22:21 | WARNING  | src.utils.aqi_calculator | Concentration 429.04 exceeds breakpoint table max
+2026-05-01 00:22:23 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:22:25 | WARNING  | src.utils.aqi_calculator | Concentration 430.33 exceeds breakpoint table max
+2026-05-01 00:22:27 | WARNING  | src.utils.aqi_calculator | Concentration 430.17 exceeds breakpoint table max
+2026-05-01 00:22:29 | WARNING  | src.utils.aqi_calculator | Concentration 429.20 exceeds breakpoint table max
+2026-05-01 00:22:31 | WARNING  | src.utils.aqi_calculator | Concentration 428.23 exceeds breakpoint table max
+2026-05-01 00:22:33 | WARNING  | src.utils.aqi_calculator | Concentration 432.10 exceeds breakpoint table max
+2026-05-01 00:22:35 | WARNING  | src.utils.aqi_calculator | Concentration 428.40 exceeds breakpoint table max
+2026-05-01 00:22:37 | WARNING  | src.utils.aqi_calculator | Concentration 429.68 exceeds breakpoint table max
+2026-05-01 00:22:39 | WARNING  | src.utils.aqi_calculator | Concentration 429.52 exceeds breakpoint table max
+2026-05-01 00:22:41 | WARNING  | src.utils.aqi_calculator | Concentration 428.23 exceeds breakpoint table max
+2026-05-01 00:22:43 | WARNING  | src.utils.aqi_calculator | Concentration 429.04 exceeds breakpoint table max
+2026-05-01 00:22:43 | INFO     | src.processing.data_processor | Processed: 600 | Rejected: 0 | AQI: 500.0 (Hazardous)
+2026-05-01 00:22:45 | WARNING  | src.utils.aqi_calculator | Concentration 428.56 exceeds breakpoint table max
+2026-05-01 00:22:47 | WARNING  | src.utils.aqi_calculator | Concentration 427.75 exceeds breakpoint table max
+2026-05-01 00:22:49 | WARNING  | src.utils.aqi_calculator | Concentration 428.40 exceeds breakpoint table max
+2026-05-01 00:22:51 | WARNING  | src.utils.aqi_calculator | Concentration 426.62 exceeds breakpoint table max
+2026-05-01 00:22:53 | WARNING  | src.utils.aqi_calculator | Concentration 429.68 exceeds breakpoint table max
+2026-05-01 00:22:55 | WARNING  | src.utils.aqi_calculator | Concentration 428.07 exceeds breakpoint table max
+2026-05-01 00:22:57 | WARNING  | src.utils.aqi_calculator | Concentration 427.75 exceeds breakpoint table max
+2026-05-01 00:22:59 | WARNING  | src.utils.aqi_calculator | Concentration 427.91 exceeds breakpoint table max
+2026-05-01 00:23:01 | WARNING  | src.utils.aqi_calculator | Concentration 426.46 exceeds breakpoint table max
+2026-05-01 00:23:03 | WARNING  | src.utils.aqi_calculator | Concentration 427.27 exceeds breakpoint table max
+2026-05-01 00:23:05 | WARNING  | src.utils.aqi_calculator | Concentration 427.27 exceeds breakpoint table max
+2026-05-01 00:23:07 | WARNING  | src.utils.aqi_calculator | Concentration 425.66 exceeds breakpoint table max
+2026-05-01 00:23:09 | WARNING  | src.utils.aqi_calculator | Concentration 425.98 exceeds breakpoint table max
+2026-05-01 00:23:11 | WARNING  | src.utils.aqi_calculator | Concentration 425.33 exceeds breakpoint table max
+2026-05-01 00:23:13 | WARNING  | src.utils.aqi_calculator | Concentration 426.62 exceeds breakpoint table max
+2026-05-01 00:23:15 | WARNING  | src.utils.aqi_calculator | Concentration 427.91 exceeds breakpoint table max
+2026-05-01 00:23:17 | WARNING  | src.utils.aqi_calculator | Concentration 436.62 exceeds breakpoint table max
+2026-05-01 00:23:19 | WARNING  | src.utils.aqi_calculator | Concentration 426.62 exceeds breakpoint table max
+2026-05-01 00:23:21 | WARNING  | src.utils.aqi_calculator | Concentration 427.11 exceeds breakpoint table max
+2026-05-01 00:23:23 | WARNING  | src.utils.aqi_calculator | Concentration 428.23 exceeds breakpoint table max
+2026-05-01 00:23:25 | WARNING  | src.utils.aqi_calculator | Concentration 428.23 exceeds breakpoint table max
+2026-05-01 00:23:27 | WARNING  | src.utils.aqi_calculator | Concentration 427.91 exceeds breakpoint table max
+2026-05-01 00:23:29 | WARNING  | src.utils.aqi_calculator | Concentration 427.59 exceeds breakpoint table max
+2026-05-01 00:23:31 | WARNING  | src.utils.aqi_calculator | Concentration 429.20 exceeds breakpoint table max
+2026-05-01 00:23:33 | WARNING  | src.utils.aqi_calculator | Concentration 425.01 exceeds breakpoint table max
+2026-05-01 00:23:35 | WARNING  | src.utils.aqi_calculator | Concentration 427.75 exceeds breakpoint table max
+2026-05-01 00:23:37 | WARNING  | src.utils.aqi_calculator | Concentration 427.59 exceeds breakpoint table max
+2026-05-01 00:23:39 | WARNING  | src.utils.aqi_calculator | Concentration 426.95 exceeds breakpoint table max
+2026-05-01 00:23:41 | WARNING  | src.utils.aqi_calculator | Concentration 425.98 exceeds breakpoint table max
+2026-05-01 00:23:43 | WARNING  | src.utils.aqi_calculator | Concentration 427.75 exceeds breakpoint table max
+2026-05-01 00:23:45 | WARNING  | src.utils.aqi_calculator | Concentration 427.11 exceeds breakpoint table max
+2026-05-01 00:23:47 | WARNING  | src.utils.aqi_calculator | Concentration 426.95 exceeds breakpoint table max
+2026-05-01 00:23:49 | WARNING  | src.utils.aqi_calculator | Concentration 426.95 exceeds breakpoint table max
+2026-05-01 00:23:51 | WARNING  | src.utils.aqi_calculator | Concentration 425.66 exceeds breakpoint table max
+2026-05-01 00:23:53 | WARNING  | src.utils.aqi_calculator | Concentration 427.11 exceeds breakpoint table max
+2026-05-01 00:23:55 | WARNING  | src.utils.aqi_calculator | Concentration 425.98 exceeds breakpoint table max
+2026-05-01 00:23:57 | WARNING  | src.utils.aqi_calculator | Concentration 425.01 exceeds breakpoint table max
+2026-05-01 00:23:59 | WARNING  | src.utils.aqi_calculator | Concentration 424.53 exceeds breakpoint table max
+2026-05-01 00:24:01 | WARNING  | src.utils.aqi_calculator | Concentration 425.01 exceeds breakpoint table max
+2026-05-01 00:24:03 | WARNING  | src.utils.aqi_calculator | Concentration 425.33 exceeds breakpoint table max
+2026-05-01 00:24:05 | WARNING  | src.utils.aqi_calculator | Concentration 426.30 exceeds breakpoint table max
+2026-05-01 00:24:07 | WARNING  | src.utils.aqi_calculator | Concentration 427.91 exceeds breakpoint table max
+2026-05-01 00:24:09 | WARNING  | src.utils.aqi_calculator | Concentration 428.07 exceeds breakpoint table max
+2026-05-01 00:24:11 | WARNING  | src.utils.aqi_calculator | Concentration 427.27 exceeds breakpoint table max
+2026-05-01 00:24:13 | WARNING  | src.utils.aqi_calculator | Concentration 427.27 exceeds breakpoint table max
+2026-05-01 00:24:15 | WARNING  | src.utils.aqi_calculator | Concentration 427.27 exceeds breakpoint table max
+2026-05-01 00:24:17 | WARNING  | src.utils.aqi_calculator | Concentration 426.14 exceeds breakpoint table max
+2026-05-01 00:24:19 | WARNING  | src.utils.aqi_calculator | Concentration 426.46 exceeds breakpoint table max
+2026-05-01 00:24:21 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:23 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:25 | WARNING  | src.utils.aqi_calculator | Concentration 435.33 exceeds breakpoint table max
+2026-05-01 00:24:27 | WARNING  | src.utils.aqi_calculator | Concentration 430.65 exceeds breakpoint table max
+2026-05-01 00:24:29 | WARNING  | src.utils.aqi_calculator | Concentration 430.49 exceeds breakpoint table max
+2026-05-01 00:24:31 | WARNING  | src.utils.aqi_calculator | Concentration 427.75 exceeds breakpoint table max
+2026-05-01 00:24:33 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:35 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:37 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:39 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:41 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:43 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:45 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:47 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:49 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:51 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:53 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:55 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:57 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:24:59 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:01 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:03 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:05 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:07 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:09 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:13 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:13 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:15 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:17 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:19 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:21 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:23 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:25 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:27 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:29 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:31 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:33 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:35 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:37 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:39 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:41 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:43 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:45 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:47 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:49 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:51 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:53 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:55 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:57 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:25:59 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:01 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:03 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:03 | INFO     | src.processing.data_processor | Processed: 700 | Rejected: 0 | AQI: 500.0 (Hazardous)
+2026-05-01 00:26:05 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:07 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:09 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:11 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:13 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:15 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:17 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:19 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:21 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:23 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:25 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:27 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:29 | WARNING  | src.utils.aqi_calculator | Concentration 660.00 exceeds breakpoint table max
+2026-05-01 00:26:30 | INFO     | src.communication.mqtt_subscriber | Subscriber stopped by user
+2026-05-01 00:26:30 | WARNING  | src.communication.mqtt_subscriber | Subscriber disconnected — rc=0
+2026-05-01 00:26:30 | INFO     | src.communication.mqtt_subscriber | Subscriber disconnected. Total received: 713 failed: 0
+2026-05-01 00:26:30 | INFO     | src.storage.influx_writer | InfluxDB connection closed. Written: 713 Failed: 0
+2026-05-01 00:26:30 | INFO     | __main__ | === AirGuard Pipeline Stopped ===
+2026-05-01 12:02:55 | INFO     | pipeline | Logging initialised — level=INFO  file=logs\airguard.log
+2026-05-01 12:02:55 | INFO     | __main__ | === AirGuard Pipeline Starting ===
+2026-05-01 12:02:55 | INFO     | src.storage.influx_writer | InfluxDB connected at http://localhost:8086
+2026-05-01 12:02:57 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 12:02:59 | INFO     | src.communication.mqtt_subscriber | MQTT Subscriber running — waiting for messages...
+2026-05-01 12:06:37 | INFO     | simulator | Logging initialised — level=INFO  file=logs\airguard.log
+2026-05-01 12:06:37 | INFO     | __main__ | === AirGuard Simulator Starting ===
+2026-05-01 12:06:37 | INFO     | src.device.simulator | Connecting to MQTT broker localhost:1883
+2026-05-01 12:06:39 | INFO     | src.device.simulator | Simulator connected to MQTT broker
+2026-05-01 12:06:41 | INFO     | src.device.simulator | Simulator starting — target records: 10500
+2026-05-01 12:06:41 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.6
+2026-05-01 12:06:53 | WARNING  | src.utils.aqi_calculator | Concentration 7258.85 exceeds breakpoint table max
+2026-05-01 12:07:25 | WARNING  | src.utils.aqi_calculator | Concentration 7257.49 exceeds breakpoint table max
+2026-05-01 12:07:27 | WARNING  | src.utils.aqi_calculator | Concentration 8658.32 exceeds breakpoint table max
+2026-05-01 12:07:29 | WARNING  | src.utils.aqi_calculator | Concentration 9635.00 exceeds breakpoint table max
+2026-05-01 12:07:43 | WARNING  | src.utils.aqi_calculator | Concentration 5235.93 exceeds breakpoint table max
+2026-05-01 12:09:27 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.13
+2026-05-01 12:09:59 | INFO     | src.processing.data_processor | Processed: 100 | Rejected: 0 | AQI: 49.3 (Good)
+2026-05-01 12:11:38 | WARNING  | src.utils.aqi_calculator | Concentration 7280.37 exceeds breakpoint table max
+2026-05-01 12:13:20 | INFO     | src.processing.data_processor | Processed: 200 | Rejected: 1 | AQI: 64.8 (Moderate)
+2026-05-01 12:13:32 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.89
+2026-05-01 12:15:16 | WARNING  | src.utils.aqi_calculator | Concentration 8883.67 exceeds breakpoint table max
+2026-05-01 12:16:40 | INFO     | src.processing.data_processor | Processed: 300 | Rejected: 2 | AQI: 54.2 (Moderate)
+2026-05-01 12:17:12 | WARNING  | src.utils.aqi_calculator | Concentration 9791.88 exceeds breakpoint table max
+2026-05-01 12:30:36 | WARNING  | src.communication.mqtt_subscriber | Subscriber disconnected — rc=7
+2026-05-01 12:30:36 | WARNING  | src.device.simulator | Simulator disconnected — rc=7
+2026-05-01 12:30:38 | WARNING  | src.device.simulator | Not connected — waiting...
+2026-05-01 12:30:39 | INFO     | src.device.simulator | Simulator connected to MQTT broker
+2026-05-01 12:30:39 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 12:31:45 | INFO     | src.processing.data_processor | Processed: 400 | Rejected: 3 | AQI: 48.4 (Good)
+2026-05-01 12:32:59 | WARNING  | src.utils.aqi_calculator | Concentration 9956.31 exceeds breakpoint table max
+2026-05-01 12:33:25 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.76
+2026-05-01 12:33:27 | WARNING  | src.utils.aqi_calculator | Concentration 5827.39 exceeds breakpoint table max
+2026-05-01 12:33:29 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.43
+2026-05-01 12:33:47 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.4
+2026-05-01 12:35:03 | INFO     | src.device.simulator | Records published: 500 / 10500 | scenario=delayed_timestamp
+2026-05-01 12:35:05 | INFO     | src.processing.data_processor | Processed: 500 | Rejected: 4 | AQI: 49.9 (Good)
+2026-05-01 12:38:07 | WARNING  | src.utils.aqi_calculator | Concentration 6921.89 exceeds breakpoint table max
+2026-05-01 12:38:25 | INFO     | src.processing.data_processor | Processed: 600 | Rejected: 5 | AQI: 34.0 (Good)
+2026-05-01 12:38:35 | WARNING  | src.utils.aqi_calculator | Concentration 8120.20 exceeds breakpoint table max
+2026-05-01 12:42:39 | WARNING  | src.communication.mqtt_subscriber | Subscriber disconnected — rc=7
+2026-05-01 12:42:39 | WARNING  | src.device.simulator | Simulator disconnected — rc=7
+2026-05-01 12:42:41 | WARNING  | src.device.simulator | Not connected — waiting...
+2026-05-01 12:42:42 | INFO     | src.device.simulator | Simulator connected to MQTT broker
+2026-05-01 12:42:42 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 12:42:46 | WARNING  | src.utils.aqi_calculator | Concentration 8238.38 exceeds breakpoint table max
+2026-05-01 12:43:58 | WARNING  | src.utils.aqi_calculator | Concentration 9180.82 exceeds breakpoint table max
+2026-05-01 12:45:12 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.29
+2026-05-01 12:45:14 | WARNING  | src.utils.aqi_calculator | Concentration 5803.05 exceeds breakpoint table max
+2026-05-01 12:45:32 | INFO     | src.processing.data_processor | Processed: 700 | Rejected: 5 | AQI: 67.6 (Moderate)
+2026-05-01 12:46:18 | WARNING  | src.utils.aqi_calculator | Concentration 5576.19 exceeds breakpoint table max
+2026-05-01 12:47:09 | WARNING  | src.utils.aqi_calculator | Concentration 8810.98 exceeds breakpoint table max
+2026-05-01 12:47:47 | WARNING  | src.utils.aqi_calculator | Concentration 9894.87 exceeds breakpoint table max
+2026-05-01 12:47:49 | WARNING  | src.utils.aqi_calculator | Concentration 5900.55 exceeds breakpoint table max
+2026-05-01 12:48:53 | INFO     | src.processing.data_processor | Processed: 800 | Rejected: 6 | AQI: 70.1 (Moderate)
+2026-05-01 12:58:28 | WARNING  | src.communication.mqtt_subscriber | Subscriber disconnected — rc=7
+2026-05-01 12:58:28 | WARNING  | src.device.simulator | Simulator disconnected — rc=7
+2026-05-01 12:58:28 | WARNING  | src.device.simulator | Not connected — waiting...
+2026-05-01 12:58:31 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 12:58:31 | INFO     | src.device.simulator | Simulator connected to MQTT broker
+2026-05-01 13:01:31 | INFO     | src.processing.data_processor | Processed: 900 | Rejected: 7 | AQI: 60.0 (Moderate)
+2026-05-01 13:02:15 | WARNING  | src.utils.aqi_calculator | Concentration 9578.70 exceeds breakpoint table max
+2026-05-01 13:04:47 | INFO     | src.device.simulator | Records published: 1000 / 10500 | scenario=normal
+2026-05-01 13:04:51 | INFO     | src.processing.data_processor | Processed: 1000 | Rejected: 10 | AQI: 60.8 (Moderate)
+2026-05-01 13:08:40 | WARNING  | src.utils.aqi_calculator | Concentration 7898.27 exceeds breakpoint table max
+2026-05-01 13:09:14 | WARNING  | src.utils.aqi_calculator | Concentration 5086.99 exceeds breakpoint table max
+2026-05-01 13:09:38 | INFO     | src.processing.data_processor | Processed: 1100 | Rejected: 12 | AQI: 52.0 (Moderate)
+2026-05-01 13:12:08 | WARNING  | src.utils.aqi_calculator | Concentration 8658.25 exceeds breakpoint table max
+2026-05-01 13:12:22 | WARNING  | src.utils.aqi_calculator | Concentration 7135.10 exceeds breakpoint table max
+2026-05-01 13:12:58 | INFO     | src.processing.data_processor | Processed: 1200 | Rejected: 14 | AQI: 72.4 (Moderate)
+2026-05-01 13:32:36 | WARNING  | src.device.simulator | Simulator disconnected — rc=7
+ted — rc=7
+2026-05-01 13:32:36 | WARNING  | src.device.simulator | Not connected — waiting...
+2026-05-01 13:32:39 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 13:32:39 | INFO     | src.device.simulator | Simulator connected to MQTT broker
+2026-05-01 13:32:49 | WARNING  | src.utils.aqi_calculator | Concentration 7868.78 exceeds breakpoint table max
+2026-05-01 13:35:52 | WARNING  | src.utils.aqi_calculator | Concentration 6553.63 exceeds breakpoint table max
+2026-05-01 13:36:00 | INFO     | src.processing.data_processor | Processed: 1300 | Rejected: 15 | AQI: 55.5 (Moderate)
+2026-05-01 13:38:08 | WARNING  | src.utils.aqi_calculator | Concentration 7460.27 exceeds breakpoint table max
+2026-05-01 13:39:02 | WARNING  | src.utils.aqi_calculator | Concentration 7292.10 exceeds breakpoint table max
+2026-05-01 13:39:20 | INFO     | src.processing.data_processor | Processed: 1400 | Rejected: 15 | AQI: 40.1 (Good)
+2026-05-01 13:41:08 | WARNING  | src.utils.aqi_calculator | Concentration 6182.01 exceeds breakpoint table max
+2026-05-01 13:41:28 | WARNING  | src.utils.aqi_calculator | Concentration 6398.36 exceeds breakpoint table max
+2026-05-01 13:42:36 | INFO     | src.device.simulator | Records published: 1500 / 10500 | scenario=normal
+2026-05-01 13:42:40 | INFO     | src.processing.data_processor | Processed: 1500 | Rejected: 15 | AQI: 57.2 (Moderate)
+2026-05-01 13:45:56 | WARNING  | src.utils.aqi_calculator | Concentration 7723.58 exceeds breakpoint table max
+2026-05-01 13:46:00 | INFO     | src.processing.data_processor | Processed: 1600 | Rejected: 15 | AQI: 30.9 (Good)
+2026-05-01 13:46:52 | WARNING  | src.utils.aqi_calculator | Concentration 7325.58 exceeds breakpoint table max
+2026-05-01 13:46:56 | WARNING  | src.utils.aqi_calculator | Concentration 9387.59 exceeds breakpoint table max
+2026-05-01 13:49:04 | WARNING  | src.utils.aqi_calculator | Concentration 8104.66 exceeds breakpoint table max
+2026-05-01 13:49:20 | INFO     | src.processing.data_processor | Processed: 1700 | Rejected: 16 | AQI: 91.0 (Moderate)
+2026-05-01 13:49:50 | WARNING  | src.utils.aqi_calculator | Concentration 5796.81 exceeds breakpoint table max
+2026-05-01 13:52:40 | INFO     | src.processing.data_processor | Processed: 1800 | Rejected: 16 | AQI: 45.7 (Good)
+2026-05-01 13:53:36 | WARNING  | src.utils.aqi_calculator | Concentration 8778.14 exceeds breakpoint table max
+2026-05-01 13:55:34 | WARNING  | src.utils.aqi_calculator | Concentration 9492.62 exceeds breakpoint table max
+2026-05-01 13:55:52 | WARNING  | src.utils.aqi_calculator | Concentration 8824.15 exceeds breakpoint table max
+2026-05-01 13:56:00 | INFO     | src.processing.data_processor | Processed: 1900 | Rejected: 17 | AQI: 92.7 (Moderate)
+2026-05-01 13:56:06 | WARNING  | src.utils.aqi_calculator | Concentration 8940.91 exceeds breakpoint table max
+2026-05-01 13:59:17 | INFO     | src.device.simulator | Records published: 2000 / 10500 | scenario=normal
+2026-05-01 13:59:21 | INFO     | src.processing.data_processor | Processed: 2000 | Rejected: 18 | AQI: 45.1 (Good)
+2026-05-01 14:02:41 | INFO     | src.processing.data_processor | Processed: 2100 | Rejected: 19 | AQI: 64.5 (Moderate)
+2026-05-01 14:03:53 | WARNING  | src.utils.aqi_calculator | Concentration 9542.53 exceeds breakpoint table max
+2026-05-01 14:05:37 | WARNING  | src.utils.aqi_calculator | Concentration 6859.84 exceeds breakpoint table max
+2026-05-01 14:06:01 | INFO     | src.processing.data_processor | Processed: 2200 | Rejected: 20 | AQI: 69.7 (Moderate)
+2026-05-01 14:06:37 | WARNING  | src.utils.aqi_calculator | Concentration 6956.81 exceeds breakpoint table max
+2026-05-01 14:07:07 | WARNING  | src.utils.aqi_calculator | Concentration 8295.94 exceeds breakpoint table max
+2026-05-01 14:09:21 | INFO     | src.processing.data_processor | Processed: 2300 | Rejected: 22 | AQI: 335.3 (Hazardous)
+2026-05-01 14:09:45 | WARNING  | src.utils.aqi_calculator | Concentration 7578.24 exceeds breakpoint table max
+2026-05-01 14:10:01 | WARNING  | src.utils.aqi_calculator | Concentration 9229.78 exceeds breakpoint table max
+2026-05-01 14:11:35 | WARNING  | src.utils.aqi_calculator | Concentration 5273.31 exceeds breakpoint table max
+2026-05-01 14:12:15 | WARNING  | src.utils.aqi_calculator | Concentration 6146.67 exceeds breakpoint table max
+2026-05-01 14:12:41 | INFO     | src.processing.data_processor | Processed: 2400 | Rejected: 24 | AQI: 38.2 (Good)
+2026-05-01 14:15:57 | INFO     | src.device.simulator | Records published: 2500 / 10500 | scenario=normal
+2026-05-01 14:16:01 | INFO     | src.processing.data_processor | Processed: 2500 | Rejected: 26 | AQI: 42.6 (Good)
+2026-05-01 14:17:55 | WARNING  | src.utils.aqi_calculator | Concentration 9477.71 exceeds breakpoint table max
+2026-05-01 14:18:17 | WARNING  | src.utils.aqi_calculator | Concentration 7329.90 exceeds breakpoint table max
+2026-05-01 14:19:20 | WARNING  | src.utils.aqi_calculator | Concentration 5476.26 exceeds breakpoint table max
+2026-05-01 14:19:22 | INFO     | src.processing.data_processor | Processed: 2600 | Rejected: 27 | AQI: 22.3 (Good)
+2026-05-01 14:20:16 | WARNING  | src.processing.data_processor | Out of range value for mq7: -2.74
+2026-05-01 14:23:06 | WARNING  | src.device.simulator | Simulator disconnected — rc=7
+2026-05-01 14:23:06 | WARNING  | src.communication.mqtt_subscriber | Subscriber disconnected — rc=7
+2026-05-01 14:23:08 | WARNING  | src.device.simulator | Not connected — waiting...
+2026-05-01 14:23:09 | INFO     | src.device.simulator | Simulator connected to MQTT broker
+2026-05-01 14:23:09 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 14:23:55 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.33
+2026-05-01 14:23:57 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.34
+2026-05-01 14:25:25 | INFO     | src.processing.data_processor | Processed: 2700 | Rejected: 30 | AQI: 57.4 (Moderate)
+2026-05-01 14:25:43 | WARNING  | src.utils.aqi_calculator | Concentration 5738.68 exceeds breakpoint table max
+2026-05-01 14:26:05 | WARNING  | src.utils.aqi_calculator | Concentration 6502.19 exceeds breakpoint table max
+2026-05-01 14:28:21 | WARNING  | src.utils.aqi_calculator | Concentration 7065.80 exceeds breakpoint table max
+2026-05-01 14:28:45 | INFO     | src.processing.data_processor | Processed: 2800 | Rejected: 31 | AQI: 38.0 (Good)
+2026-05-01 14:28:59 | WARNING  | src.utils.aqi_calculator | Concentration 5366.01 exceeds breakpoint table max
+2026-05-01 14:29:11 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.37
+2026-05-01 14:29:35 | WARNING  | src.utils.aqi_calculator | Concentration 8762.37 exceeds breakpoint table max
+2026-05-01 14:29:41 | WARNING  | src.utils.aqi_calculator | Concentration 5383.81 exceeds breakpoint table max
+2026-05-01 14:30:01 | WARNING  | src.utils.aqi_calculator | Concentration 8314.06 exceeds breakpoint table max
+2026-05-01 14:31:25 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.02
+2026-05-01 14:31:41 | WARNING  | src.utils.aqi_calculator | Concentration 6353.57 exceeds breakpoint table max
+2026-05-01 14:31:43 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.58
+2026-05-01 14:32:05 | INFO     | src.processing.data_processor | Processed: 2900 | Rejected: 33 | AQI: 69.9 (Moderate)
+2026-05-01 14:33:49 | WARNING  | src.utils.aqi_calculator | Concentration 6699.49 exceeds breakpoint table max
+2026-05-01 14:33:59 | WARNING  | src.utils.aqi_calculator | Concentration 8329.28 exceeds breakpoint table max
+2026-05-01 14:34:09 | WARNING  | src.utils.aqi_calculator | Concentration 9732.61 exceeds breakpoint table max
+2026-05-01 14:34:21 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.24
+2026-05-01 14:35:18 | WARNING  | src.utils.aqi_calculator | Concentration 8187.09 exceeds breakpoint table max
+2026-05-01 14:35:20 | INFO     | src.device.simulator | Records published: 3000 / 10500 | scenario=normal
+2026-05-01 14:35:26 | INFO     | src.processing.data_processor | Processed: 3000 | Rejected: 34 | AQI: 66.4 (Moderate)
+2026-05-01 14:36:58 | WARNING  | src.utils.aqi_calculator | Concentration 7657.88 exceeds breakpoint table max
+2026-05-01 14:37:14 | WARNING  | src.utils.aqi_calculator | Concentration 8729.59 exceeds breakpoint table max
+2026-05-01 14:37:46 | WARNING  | src.utils.aqi_calculator | Concentration 7122.18 exceeds breakpoint table max
+2026-05-01 14:38:46 | INFO     | src.processing.data_processor | Processed: 3100 | Rejected: 35 | AQI: 57.8 (Moderate)
+2026-05-01 14:39:10 | WARNING  | src.utils.aqi_calculator | Concentration 5020.89 exceeds breakpoint table max
+2026-05-01 14:40:44 | WARNING  | src.utils.aqi_calculator | Concentration 6380.44 exceeds breakpoint table max
+2026-05-01 14:42:06 | INFO     | src.processing.data_processor | Processed: 3200 | Rejected: 35 | AQI: 68.2 (Moderate)
+2026-05-01 14:42:36 | WARNING  | src.utils.aqi_calculator | Concentration 7307.47 exceeds breakpoint table max
+2026-05-01 14:44:30 | WARNING  | src.utils.aqi_calculator | Concentration 6854.71 exceeds breakpoint table max
+2026-05-01 14:45:26 | INFO     | src.processing.data_processor | Processed: 3300 | Rejected: 36 | AQI: 42.5 (Good)
+2026-05-01 14:48:46 | INFO     | src.processing.data_processor | Processed: 3400 | Rejected: 36 | AQI: 46.9 (Good)
+2026-05-01 14:51:40 | WARNING  | src.utils.aqi_calculator | Concentration 6763.13 exceeds breakpoint table max
+2026-05-01 14:52:00 | WARNING  | src.utils.aqi_calculator | Concentration 7869.71 exceeds breakpoint table max
+2026-05-01 14:52:00 | INFO     | src.device.simulator | Records published: 3500 / 10500 | scenario=out_of_range
+2026-05-01 14:52:06 | INFO     | src.processing.data_processor | Processed: 3500 | Rejected: 36 | AQI: 29.2 (Good)
+2026-05-01 14:52:32 | WARNING  | src.utils.aqi_calculator | Concentration 7781.50 exceeds breakpoint table max
+2026-05-01 14:53:44 | WARNING  | src.utils.aqi_calculator | Concentration 6259.93 exceeds breakpoint table max
+2026-05-01 14:54:09 | WARNING  | src.utils.aqi_calculator | Concentration 7201.90 exceeds breakpoint table max
+2026-05-01 14:54:21 | WARNING  | src.utils.aqi_calculator | Concentration 5666.20 exceeds breakpoint table max
+2026-05-01 14:54:57 | WARNING  | src.utils.aqi_calculator | Concentration 5944.99 exceeds breakpoint table max
+2026-05-01 14:55:05 | WARNING  | src.utils.aqi_calculator | Concentration 5302.32 exceeds breakpoint table max
+2026-05-01 14:55:27 | INFO     | src.processing.data_processor | Processed: 3600 | Rejected: 38 | AQI: 63.8 (Moderate)
+2026-05-01 14:58:09 | WARNING  | src.utils.aqi_calculator | Concentration 9144.43 exceeds breakpoint table max
+2026-05-01 14:58:47 | INFO     | src.processing.data_processor | Processed: 3700 | Rejected: 38 | AQI: 67.3 (Moderate)
+2026-05-01 14:59:55 | WARNING  | src.utils.aqi_calculator | Concentration 6554.23 exceeds breakpoint table max
+2026-05-01 15:00:39 | WARNING  | src.utils.aqi_calculator | Concentration 6512.09 exceeds breakpoint table max
+2026-05-01 15:01:31 | WARNING  | src.utils.aqi_calculator | Concentration 6239.56 exceeds breakpoint table max
+2026-05-01 15:01:45 | WARNING  | src.utils.aqi_calculator | Concentration 8764.57 exceeds breakpoint table max
+2026-05-01 15:02:07 | INFO     | src.processing.data_processor | Processed: 3800 | Rejected: 39 | AQI: 30.6 (Good)
+2026-05-01 15:04:45 | WARNING  | src.utils.aqi_calculator | Concentration 9837.70 exceeds breakpoint table max
+2026-05-01 15:05:27 | INFO     | src.processing.data_processor | Processed: 3900 | Rejected: 40 | AQI: 55.7 (Moderate)
+2026-05-01 15:06:47 | WARNING  | src.utils.aqi_calculator | Concentration 8875.52 exceeds breakpoint table max
+2026-05-01 15:07:11 | WARNING  | src.utils.aqi_calculator | Concentration 7840.49 exceeds breakpoint table max
+2026-05-01 15:08:41 | INFO     | src.device.simulator | Records published: 4000 / 10500 | scenario=normal
+2026-05-01 15:08:47 | INFO     | src.processing.data_processor | Processed: 4000 | Rejected: 42 | AQI: 39.7 (Good)
+2026-05-01 15:08:57 | WARNING  | src.utils.aqi_calculator | Concentration 8337.15 exceeds breakpoint table max
+2026-05-01 15:09:15 | WARNING  | src.utils.aqi_calculator | Concentration 9406.34 exceeds breakpoint table max
+2026-05-01 15:09:55 | WARNING  | src.utils.aqi_calculator | Concentration 7496.51 exceeds breakpoint table max
+2026-05-01 15:10:01 | WARNING  | src.utils.aqi_calculator | Concentration 7748.97 exceeds breakpoint table max
+2026-05-01 15:12:07 | INFO     | src.processing.data_processor | Processed: 4100 | Rejected: 42 | AQI: 84.4 (Moderate)
+2026-05-01 15:12:17 | WARNING  | src.utils.aqi_calculator | Concentration 8807.16 exceeds breakpoint table max
+2026-05-01 15:16:59 | WARNING  | src.communication.mqtt_subscriber | Subscriber disconnected — rc=7
+2026-05-01 15:16:59 | WARNING  | src.device.simulator | Simulator disconnected — rc=7
+2026-05-01 15:16:59 | WARNING  | src.device.simulator | Not connected — waiting...
+2026-05-01 15:17:02 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 15:17:02 | INFO     | src.device.simulator | Simulator connected to MQTT broker
+2026-05-01 15:17:18 | WARNING  | src.utils.aqi_calculator | Concentration 8004.83 exceeds breakpoint table max
+2026-05-01 15:18:50 | WARNING  | src.utils.aqi_calculator | Concentration 6907.87 exceeds breakpoint table max
+2026-05-01 15:20:00 | INFO     | src.processing.data_processor | Processed: 4200 | Rejected: 44 | AQI: 65.6 (Moderate)
+2026-05-01 15:20:16 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.19
+2026-05-01 15:22:18 | WARNING  | src.utils.aqi_calculator | Concentration 8027.41 exceeds breakpoint table max
+2026-05-01 15:23:14 | WARNING  | src.utils.aqi_calculator | Concentration 8807.56 exceeds breakpoint table max
+2026-05-01 15:24:38 | INFO     | src.processing.data_processor | Processed: 4300 | Rejected: 45 | AQI: 60.4 (Moderate)
+2026-05-01 15:26:12 | WARNING  | src.utils.aqi_calculator | Concentration 6830.17 exceeds breakpoint table max
+2026-05-01 15:27:50 | WARNING  | src.utils.aqi_calculator | Concentration 5940.69 exceeds breakpoint table max
+2026-05-01 15:27:58 | INFO     | src.processing.data_processor | Processed: 4400 | Rejected: 45 | AQI: 48.3 (Good)
+2026-05-01 15:29:20 | WARNING  | src.utils.aqi_calculator | Concentration 5437.95 exceeds breakpoint table max
+2026-05-01 15:29:32 | WARNING  | src.utils.aqi_calculator | Concentration 5380.76 exceeds breakpoint table max
+2026-05-01 15:31:12 | INFO     | src.device.simulator | Records published: 4500 / 10500 | scenario=normal
+2026-05-01 15:31:18 | INFO     | src.processing.data_processor | Processed: 4500 | Rejected: 46 | AQI: 267.6 (Very Unhealthy)
+2026-05-01 15:41:34 | WARNING  | src.device.simulator | Simulator disconnected — rc=7
+ted — rc=7
+2026-05-01 15:41:36 | WARNING  | src.device.simulator | Not connected — waiting...
+2026-05-01 15:41:37 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 15:41:37 | INFO     | src.device.simulator | Simulator connected to MQTT broker
+2026-05-01 15:41:41 | WARNING  | src.utils.aqi_calculator | Concentration 6604.58 exceeds breakpoint table max
+2026-05-01 15:41:45 | WARNING  | src.utils.aqi_calculator | Concentration 7659.27 exceeds breakpoint table max
+2026-05-01 15:42:37 | WARNING  | src.utils.aqi_calculator | Concentration 6482.53 exceeds breakpoint table max
+2026-05-01 15:44:13 | INFO     | src.processing.data_processor | Processed: 4600 | Rejected: 47 | AQI: 43.6 (Good)
+2026-05-01 15:44:33 | WARNING  | src.utils.aqi_calculator | Concentration 7795.00 exceeds breakpoint table max
+2026-05-01 15:45:34 | WARNING  | src.utils.aqi_calculator | Concentration 5015.10 exceeds breakpoint table max
+2026-05-01 15:46:00 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.27
+2026-05-01 15:46:28 | WARNING  | src.processing.data_processor | Out of range value for mq7: -1.48
+2026-05-01 15:47:08 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.07
+2026-05-01 15:47:34 | INFO     | src.processing.data_processor | Processed: 4700 | Rejected: 50 | AQI: 15.7 (Good)
+2026-05-01 15:49:20 | WARNING  | src.utils.aqi_calculator | Concentration 8958.79 exceeds breakpoint table max
+2026-05-01 15:50:00 | WARNING  | src.utils.aqi_calculator | Concentration 7083.85 exceeds breakpoint table max
+2026-05-01 15:50:10 | WARNING  | src.utils.aqi_calculator | Concentration 7450.60 exceeds breakpoint table max
+2026-05-01 15:50:54 | INFO     | src.processing.data_processor | Processed: 4800 | Rejected: 53 | AQI: 19.9 (Good)
+2026-05-01 15:51:00 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.56
+2026-05-01 15:51:24 | WARNING  | src.processing.data_processor | Out of range value for mq7: -1.05
+2026-05-01 15:51:36 | WARNING  | src.processing.data_processor | Out of range value for mq7: -1.74
+2026-05-01 15:52:30 | WARNING  | src.utils.aqi_calculator | Concentration 8173.95 exceeds breakpoint table max
+2026-05-01 15:52:50 | WARNING  | src.processing.data_processor | Out of range value for mq7: -1.56
+2026-05-01 15:53:32 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.47
+2026-05-01 15:53:54 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.24
+2026-05-01 15:54:12 | WARNING  | src.utils.aqi_calculator | Concentration 9281.52 exceeds breakpoint table max
+2026-05-01 15:54:14 | INFO     | src.processing.data_processor | Processed: 4900 | Rejected: 53 | AQI: 46.2 (Good)
+2026-05-01 15:56:24 | WARNING  | src.processing.data_processor | Out of range value for mq7: -3.01
+2026-05-01 15:56:50 | WARNING  | src.utils.aqi_calculator | Concentration 7206.02 exceeds breakpoint table max
+2026-05-01 15:57:28 | INFO     | src.device.simulator | Records published: 5000 / 10500 | scenario=normal
+2026-05-01 15:57:34 | INFO     | src.processing.data_processor | Processed: 5000 | Rejected: 54 | AQI: 20.9 (Good)
+2026-05-01 15:58:22 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.83
+2026-05-01 15:58:30 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.05
+2026-05-01 15:58:34 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.52
+2026-05-01 15:58:34 | WARNING  | src.utils.aqi_calculator | Concentration 8631.39 exceeds breakpoint table max
+2026-05-01 15:59:24 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.01
+2026-05-01 15:59:26 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.59
+2026-05-01 16:00:18 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.82
+2026-05-01 16:00:22 | WARNING  | src.processing.data_processor | Out of range value for mq7: -1.32
+2026-05-01 16:00:54 | INFO     | src.processing.data_processor | Processed: 5100 | Rejected: 54 | AQI: 13.9 (Good)
+2026-05-01 16:03:40 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.31
+2026-05-01 16:03:42 | WARNING  | src.utils.aqi_calculator | Concentration 8843.44 exceeds breakpoint table max
+2026-05-01 16:04:14 | INFO     | src.processing.data_processor | Processed: 5200 | Rejected: 54 | AQI: 31.0 (Good)
+2026-05-01 16:04:46 | WARNING  | src.processing.data_processor | Out of range value for mq7: -1.25
+2026-05-01 16:05:48 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.72
+2026-05-01 16:06:33 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.34
+2026-05-01 16:06:39 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.41
+2026-05-01 16:07:07 | WARNING  | src.utils.aqi_calculator | Concentration 9245.25 exceeds breakpoint table max
+2026-05-01 16:07:15 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.02
+2026-05-01 16:07:19 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.2
+2026-05-01 16:07:25 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.05
+2026-05-01 16:07:35 | INFO     | src.processing.data_processor | Processed: 5300 | Rejected: 55 | AQI: 47.5 (Good)
+2026-05-01 16:08:01 | WARNING  | src.processing.data_processor | Out of range value for mq7: -1.02
+2026-05-01 16:08:37 | WARNING  | src.utils.aqi_calculator | Concentration 8181.71 exceeds breakpoint table max
+2026-05-01 16:08:47 | WARNING  | src.utils.aqi_calculator | Concentration 5378.73 exceeds breakpoint table max
+2026-05-01 16:09:31 | WARNING  | src.processing.data_processor | Out of range value for mq7: -1.12
+2026-05-01 16:09:33 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.81
+2026-05-01 16:10:37 | WARNING  | src.processing.data_processor | Out of range value for mq7: -1.4
+2026-05-01 16:10:55 | INFO     | src.processing.data_processor | Processed: 5400 | Rejected: 58 | AQI: 28.1 (Good)
+2026-05-01 16:10:57 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.17
+2026-05-01 16:11:19 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.91
+2026-05-01 16:11:35 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.31
+2026-05-01 16:12:39 | WARNING  | src.utils.aqi_calculator | Concentration 7234.11 exceeds breakpoint table max
+2026-05-01 16:12:59 | WARNING  | src.utils.aqi_calculator | Concentration 8747.60 exceeds breakpoint table max
+2026-05-01 16:13:11 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.61
+2026-05-01 16:13:59 | WARNING  | src.utils.aqi_calculator | Concentration 8819.70 exceeds breakpoint table max
+2026-05-01 16:14:09 | INFO     | src.device.simulator | Records published: 5500 / 10500 | scenario=normal
+2026-05-01 16:14:15 | INFO     | src.processing.data_processor | Processed: 5500 | Rejected: 58 | AQI: 198.8 (Unhealthy)
+2026-05-01 16:14:37 | WARNING  | src.utils.aqi_calculator | Concentration 5993.28 exceeds breakpoint table max
+2026-05-01 16:16:15 | WARNING  | src.utils.aqi_calculator | Concentration 6706.98 exceeds breakpoint table max
+2026-05-01 16:17:35 | INFO     | src.processing.data_processor | Processed: 5600 | Rejected: 59 | AQI: 27.8 (Good)
+2026-05-01 16:17:49 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.59
+2026-05-01 16:18:21 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.27
+2026-05-01 16:18:53 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.96
+2026-05-01 16:18:55 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.17
+2026-05-01 16:19:13 | WARNING  | src.utils.aqi_calculator | Concentration 8380.12 exceeds breakpoint table max
+2026-05-01 16:19:25 | WARNING  | src.processing.data_processor | Out of range value for mq7: -1.18
+2026-05-01 16:20:17 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.25
+2026-05-01 16:20:55 | INFO     | src.processing.data_processor | Processed: 5700 | Rejected: 59 | AQI: 56.9 (Moderate)
+2026-05-01 16:22:55 | WARNING  | src.utils.aqi_calculator | Concentration 8541.38 exceeds breakpoint table max
+2026-05-01 16:23:03 | WARNING  | src.utils.aqi_calculator | Concentration 5007.13 exceeds breakpoint table max
+2026-05-01 16:23:29 | WARNING  | src.utils.aqi_calculator | Concentration 5183.52 exceeds breakpoint table max
+2026-05-01 16:23:51 | WARNING  | src.utils.aqi_calculator | Concentration 9211.30 exceeds breakpoint table max
+2026-05-01 16:23:55 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.82
+2026-05-01 16:24:15 | INFO     | src.processing.data_processor | Processed: 5800 | Rejected: 59 | AQI: 344.9 (Hazardous)
+2026-05-01 16:24:43 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.12
+2026-05-01 16:24:55 | WARNING  | src.utils.aqi_calculator | Concentration 5768.24 exceeds breakpoint table max
+2026-05-01 16:25:53 | WARNING  | src.utils.aqi_calculator | Concentration 5045.24 exceeds breakpoint table max
+2026-05-01 16:27:35 | INFO     | src.processing.data_processor | Processed: 5900 | Rejected: 59 | AQI: 37.0 (Good)
+2026-05-01 16:29:40 | WARNING  | src.utils.aqi_calculator | Concentration 5500.82 exceeds breakpoint table max
+2026-05-01 16:30:50 | INFO     | src.device.simulator | Records published: 6000 / 10500 | scenario=normal
+2026-05-01 16:30:56 | INFO     | src.processing.data_processor | Processed: 6000 | Rejected: 61 | AQI: 31.1 (Good)
+2026-05-01 16:31:08 | WARNING  | src.utils.aqi_calculator | Concentration 6155.37 exceeds breakpoint table max
+2026-05-01 16:31:14 | WARNING  | src.utils.aqi_calculator | Concentration 6730.82 exceeds breakpoint table max
+2026-05-01 16:34:16 | INFO     | src.processing.data_processor | Processed: 6100 | Rejected: 61 | AQI: 73.5 (Moderate)
+2026-05-01 16:37:36 | INFO     | src.processing.data_processor | Processed: 6200 | Rejected: 61 | AQI: 38.8 (Good)
+2026-05-01 16:37:38 | WARNING  | src.processing.data_processor | Out of range value for mq7: -1.12
+2026-05-01 16:38:26 | WARNING  | src.utils.aqi_calculator | Concentration 9189.80 exceeds breakpoint table max
+2026-05-01 16:40:56 | INFO     | src.processing.data_processor | Processed: 6300 | Rejected: 63 | AQI: 78.3 (Moderate)
+2026-05-01 16:42:48 | WARNING  | src.utils.aqi_calculator | Concentration 5351.05 exceeds breakpoint table max
+2026-05-01 16:44:16 | INFO     | src.processing.data_processor | Processed: 6400 | Rejected: 63 | AQI: 41.8 (Good)
+2026-05-01 16:45:48 | WARNING  | src.utils.aqi_calculator | Concentration 6490.63 exceeds breakpoint table max
+2026-05-01 16:46:02 | WARNING  | src.utils.aqi_calculator | Concentration 6246.59 exceeds breakpoint table max
+2026-05-01 16:46:52 | WARNING  | src.processing.data_processor | Out of range value for mq7: -1.43
+2026-05-01 16:47:30 | INFO     | src.device.simulator | Records published: 6500 / 10500 | scenario=normal
+2026-05-01 16:47:36 | INFO     | src.processing.data_processor | Processed: 6500 | Rejected: 65 | AQI: 57.7 (Moderate)
+2026-05-01 16:50:26 | WARNING  | src.utils.aqi_calculator | Concentration 8295.57 exceeds breakpoint table max
+2026-05-01 16:50:58 | INFO     | src.processing.data_processor | Processed: 6600 | Rejected: 65 | AQI: 32.3 (Good)
+2026-05-01 16:51:38 | WARNING  | src.utils.aqi_calculator | Concentration 6096.26 exceeds breakpoint table max
+2026-05-01 16:51:54 | WARNING  | src.utils.aqi_calculator | Concentration 9709.14 exceeds breakpoint table max
+2026-05-01 16:52:22 | WARNING  | src.utils.aqi_calculator | Concentration 6043.96 exceeds breakpoint table max
+2026-05-01 16:52:44 | WARNING  | src.utils.aqi_calculator | Concentration 7243.26 exceeds breakpoint table max
+2026-05-01 16:53:02 | WARNING  | src.utils.aqi_calculator | Concentration 8973.40 exceeds breakpoint table max
+2026-05-01 16:53:54 | WARNING  | src.utils.aqi_calculator | Concentration 5737.33 exceeds breakpoint table max
+2026-05-01 16:54:14 | WARNING  | src.utils.aqi_calculator | Concentration 5074.56 exceeds breakpoint table max
+2026-05-01 16:54:18 | INFO     | src.processing.data_processor | Processed: 6700 | Rejected: 65 | AQI: 61.6 (Moderate)
+2026-05-01 16:57:11 | WARNING  | src.utils.aqi_calculator | Concentration 9763.17 exceeds breakpoint table max
+2026-05-01 16:57:39 | INFO     | src.processing.data_processor | Processed: 6800 | Rejected: 65 | AQI: 46.0 (Good)
+2026-05-01 16:58:43 | WARNING  | src.utils.aqi_calculator | Concentration 6138.22 exceeds breakpoint table max
+2026-05-01 17:00:23 | WARNING  | src.processing.data_processor | Out of range value for mq7: -0.15
+2026-05-01 17:00:59 | INFO     | src.processing.data_processor | Processed: 6900 | Rejected: 67 | AQI: 65.2 (Moderate)
+2026-05-01 17:02:37 | WARNING  | src.utils.aqi_calculator | Concentration 5860.41 exceeds breakpoint table max
+2026-05-01 17:03:15 | WARNING  | src.utils.aqi_calculator | Concentration 7135.63 exceeds breakpoint table max
+2026-05-01 17:04:13 | INFO     | src.device.simulator | Records published: 7000 / 10500 | scenario=normal
+2026-05-01 17:04:19 | INFO     | src.processing.data_processor | Processed: 7000 | Rejected: 69 | AQI: 67.2 (Moderate)
+2026-05-01 17:06:33 | WARNING  | src.utils.aqi_calculator | Concentration 5647.37 exceeds breakpoint table max
+2026-05-01 17:09:35 | WARNING  | src.communication.mqtt_subscriber | Subscriber disconnected — rc=7
+2026-05-01 17:09:35 | WARNING  | src.device.simulator | Simulator disconnected — rc=7
+2026-05-01 17:09:37 | WARNING  | src.device.simulator | Not connected — waiting...
+2026-05-01 17:09:38 | INFO     | src.device.simulator | Simulator connected to MQTT broker
+2026-05-01 17:09:38 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 17:10:32 | WARNING  | src.utils.aqi_calculator | Concentration 6259.81 exceeds breakpoint table max
+2026-05-01 17:10:34 | INFO     | src.processing.data_processor | Processed: 7100 | Rejected: 69 | AQI: 60.3 (Moderate)
+2026-05-01 17:11:12 | WARNING  | src.utils.aqi_calculator | Concentration 7334.29 exceeds breakpoint table max
+2026-05-01 17:11:56 | WARNING  | src.utils.aqi_calculator | Concentration 7510.90 exceeds breakpoint table max
+2026-05-01 17:12:50 | WARNING  | src.utils.aqi_calculator | Concentration 8628.45 exceeds breakpoint table max
+2026-05-01 17:13:54 | INFO     | src.processing.data_processor | Processed: 7200 | Rejected: 69 | AQI: 63.1 (Moderate)
+2026-05-01 17:14:24 | WARNING  | src.utils.aqi_calculator | Concentration 5929.43 exceeds breakpoint table max
+2026-05-01 17:17:15 | INFO     | src.processing.data_processor | Processed: 7300 | Rejected: 69 | AQI: 69.7 (Moderate)
+2026-05-01 17:17:21 | WARNING  | src.utils.aqi_calculator | Concentration 5469.38 exceeds breakpoint table max
+2026-05-01 17:19:39 | WARNING  | src.utils.aqi_calculator | Concentration 8616.51 exceeds breakpoint table max
+2026-05-01 17:20:29 | WARNING  | src.utils.aqi_calculator | Concentration 8707.43 exceeds breakpoint table max
+2026-05-01 17:20:35 | INFO     | src.processing.data_processor | Processed: 7400 | Rejected: 69 | AQI: 55.9 (Moderate)
+2026-05-01 17:25:11 | WARNING  | src.device.simulator | Simulator disconnected — rc=7
+2026-05-01 17:25:11 | WARNING  | src.device.simulator | Not connected — waiting...
+2026-05-01 17:25:11 | WARNING  | src.communication.mqtt_subscriber | Subscriber disconnected — rc=7
+2026-05-01 17:25:14 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 17:27:00 | INFO     | src.device.simulator | Records published: 7500 / 10500 | scenario=normal
+2026-05-01 17:27:08 | INFO     | src.processing.data_processor | Processed: 7500 | Rejected: 69 | AQI: 84.7 (Moderate)
+2026-05-01 17:29:06 | WARNING  | src.utils.aqi_calculator | Concentration 9969.07 exceeds breakpoint table max
+2026-05-01 17:29:42 | WARNING  | src.utils.aqi_calculator | Concentration 8364.68 exceeds breakpoint table max
+2026-05-01 17:30:28 | INFO     | src.processing.data_processor | Processed: 7600 | Rejected: 69 | AQI: 47.8 (Good)
+2026-05-01 17:30:46 | WARNING  | src.utils.aqi_calculator | Concentration 5866.65 exceeds breakpoint table max
+2026-05-01 17:31:52 | WARNING  | src.utils.aqi_calculator | Concentration 6395.76 exceeds breakpoint table max
+2026-05-01 17:33:49 | INFO     | src.processing.data_processor | Processed: 7700 | Rejected: 69 | AQI: 73.6 (Moderate)
+2026-05-01 17:33:57 | WARNING  | src.utils.aqi_calculator | Concentration 5018.93 exceeds breakpoint table max
+2026-05-01 17:35:19 | WARNING  | src.utils.aqi_calculator | Concentration 5562.19 exceeds breakpoint table max
+2026-05-01 17:36:13 | WARNING  | src.utils.aqi_calculator | Concentration 5547.73 exceeds breakpoint table max
+2026-05-01 17:37:09 | INFO     | src.processing.data_processor | Processed: 7800 | Rejected: 70 | AQI: 74.1 (Moderate)
+2026-05-01 17:38:41 | WARNING  | src.utils.aqi_calculator | Concentration 8073.75 exceeds breakpoint table max
+2026-05-01 17:40:29 | INFO     | src.processing.data_processor | Processed: 7900 | Rejected: 72 | AQI: 59.6 (Moderate)
+2026-05-01 17:41:01 | WARNING  | src.utils.aqi_calculator | Concentration 7802.03 exceeds breakpoint table max
+2026-05-01 17:43:39 | WARNING  | src.utils.aqi_calculator | Concentration 7383.61 exceeds breakpoint table max
+2026-05-01 17:43:41 | INFO     | src.device.simulator | Records published: 8000 / 10500 | scenario=normal
+2026-05-01 17:43:49 | INFO     | src.processing.data_processor | Processed: 8000 | Rejected: 73 | AQI: 33.6 (Good)
+2026-05-01 17:45:17 | WARNING  | src.utils.aqi_calculator | Concentration 5335.06 exceeds breakpoint table max
+2026-05-01 17:47:09 | INFO     | src.processing.data_processor | Processed: 8100 | Rejected: 73 | AQI: 91.5 (Moderate)
+2026-05-01 17:47:27 | WARNING  | src.utils.aqi_calculator | Concentration 9364.27 exceeds breakpoint table max
+2026-05-01 17:49:59 | WARNING  | src.utils.aqi_calculator | Concentration 8394.91 exceeds breakpoint table max
+2026-05-01 17:50:07 | WARNING  | src.utils.aqi_calculator | Concentration 8903.78 exceeds breakpoint table max
+2026-05-01 17:50:29 | INFO     | src.processing.data_processor | Processed: 8200 | Rejected: 74 | AQI: 83.1 (Moderate)
+2026-05-01 17:55:56 | WARNING  | src.communication.mqtt_subscriber | Subscriber disconnected — rc=7
+2026-05-01 17:55:56 | WARNING  | src.device.simulator | Simulator disconnected — rc=7
+2026-05-01 17:55:56 | WARNING  | src.device.simulator | Not connected — waiting...
+2026-05-01 17:55:59 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 17:55:59 | INFO     | src.device.simulator | Simulator connected to MQTT broker
+2026-05-01 17:59:05 | WARNING  | src.utils.aqi_calculator | Concentration 5339.55 exceeds breakpoint table max
+2026-05-01 17:59:07 | INFO     | src.processing.data_processor | Processed: 8300 | Rejected: 74 | AQI: 74.4 (Moderate)
+2026-05-01 18:06:41 | WARNING  | src.communication.mqtt_subscriber | Subscriber disconnected — rc=7
+2026-05-01 18:06:41 | WARNING  | src.device.simulator | Simulator disconnected — rc=7
+2026-05-01 18:06:41 | WARNING  | src.device.simulator | Not connected — waiting...
+2026-05-01 18:06:44 | INFO     | src.communication.mqtt_subscriber | Subscriber connected and subscribed to: airguard/sensors/raw
+2026-05-01 18:06:44 | INFO     | src.device.simulator | Simulator connected to MQTT broker
+2026-05-01 18:08:06 | WARNING  | src.utils.aqi_calculator | Concentration 9871.03 exceeds breakpoint table max
+2026-05-01 18:08:22 | WARNING  | src.utils.aqi_calculator | Concentration 5912.56 exceeds breakpoint table max
+2026-05-01 18:08:26 | WARNING  | src.utils.aqi_calculator | Concentration 9139.41 exceeds breakpoint table max
+2026-05-01 18:09:45 | INFO     | src.processing.data_processor | Processed: 8400 | Rejected: 74 | AQI: 89.2 (Moderate)
+2026-05-01 18:12:57 | INFO     | src.device.simulator | Records published: 8500 / 10500 | scenario=normal
+2026-05-01 18:13:05 | INFO     | src.processing.data_processor | Processed: 8500 | Rejected: 74 | AQI: 113.5 (Unhealthy for SG)
+2026-05-01 18:14:45 | WARNING  | src.utils.aqi_calculator | Concentration 7151.23 exceeds breakpoint table max
+2026-05-01 18:16:23 | WARNING  | src.utils.aqi_calculator | Concentration 9709.17 exceeds breakpoint table max
+2026-05-01 18:16:25 | INFO     | src.processing.data_processor | Processed: 8600 | Rejected: 75 | AQI: 69.8 (Moderate)
+2026-05-01 18:17:59 | WARNING  | src.utils.aqi_calculator | Concentration 7800.82 exceeds breakpoint table max
+2026-05-01 18:18:53 | WARNING  | src.utils.aqi_calculator | Concentration 7620.79 exceeds breakpoint table max
+2026-05-01 18:19:45 | INFO     | src.processing.data_processor | Processed: 8700 | Rejected: 75 | AQI: 77.7 (Moderate)
+2026-05-01 18:20:39 | WARNING  | src.utils.aqi_calculator | Concentration 6420.36 exceeds breakpoint table max
+2026-05-01 18:21:03 | WARNING  | src.utils.aqi_calculator | Concentration 5416.23 exceeds breakpoint table max
+2026-05-01 18:22:19 | WARNING  | src.utils.aqi_calculator | Concentration 9825.92 exceeds breakpoint table max
+2026-05-01 18:23:05 | INFO     | src.processing.data_processor | Processed: 8800 | Rejected: 75 | AQI: 87.5 (Moderate)
+2026-05-01 18:24:03 | WARNING  | src.utils.aqi_calculator | Concentration 7153.56 exceeds breakpoint table max
+2026-05-01 18:24:17 | WARNING  | src.utils.aqi_calculator | Concentration 7456.26 exceeds breakpoint table max
+2026-05-01 18:26:25 | INFO     | src.processing.data_processor | Processed: 8900 | Rejected: 76 | AQI: 72.2 (Moderate)
+2026-05-01 18:27:01 | WARNING  | src.utils.aqi_calculator | Concentration 5954.45 exceeds breakpoint table max
+2026-05-01 18:28:21 | WARNING  | src.utils.aqi_calculator | Concentration 5256.82 exceeds breakpoint table max
+2026-05-01 18:28:41 | WARNING  | src.utils.aqi_calculator | Concentration 7407.33 exceeds breakpoint table max
+2026-05-01 18:29:37 | INFO     | src.device.simulator | Records published: 9000 / 10500 | scenario=normal
+2026-05-01 18:29:45 | INFO     | src.processing.data_processor | Processed: 9000 | Rejected: 76 | AQI: 52.8 (Moderate)
+2026-05-01 18:30:07 | WARNING  | src.utils.aqi_calculator | Concentration 5170.23 exceeds breakpoint table max
+2026-05-01 18:30:09 | WARNING  | src.utils.aqi_calculator | Concentration 7112.83 exceeds breakpoint table max
+2026-05-01 18:31:15 | WARNING  | src.utils.aqi_calculator | Concentration 8188.78 exceeds breakpoint table max
+2026-05-01 18:31:29 | WARNING  | src.utils.aqi_calculator | Concentration 6042.61 exceeds breakpoint table max
+2026-05-01 18:32:57 | WARNING  | src.utils.aqi_calculator | Concentration 8132.29 exceeds breakpoint table max
+2026-05-01 18:33:05 | INFO     | src.processing.data_processor | Processed: 9100 | Rejected: 76 | AQI: 46.1 (Good)
+2026-05-01 18:34:01 | WARNING  | src.utils.aqi_calculator | Concentration 8130.83 exceeds breakpoint table max
+2026-05-01 18:34:07 | WARNING  | src.utils.aqi_calculator | Concentration 9309.39 exceeds breakpoint table max
+2026-05-01 18:36:25 | INFO     | src.processing.data_processor | Processed: 9200 | Rejected: 77 | AQI: 59.0 (Moderate)
+2026-05-01 18:37:31 | WARNING  | src.utils.aqi_calculator | Concentration 9573.59 exceeds breakpoint table max
+2026-05-01 18:38:21 | WARNING  | src.utils.aqi_calculator | Concentration 8114.85 exceeds breakpoint table max
+2026-05-01 18:41:09 | INFO     | src.processing.data_processor | Processed: 9300 | Rejected: 77 | AQI: 99.5 (Moderate)
+2026-05-01 18:42:21 | WARNING  | src.utils.aqi_calculator | Concentration 6896.53 exceeds breakpoint table max
+2026-05-01 18:43:09 | WARNING  | src.utils.aqi_calculator | Concentration 7220.56 exceeds breakpoint table max
+2026-05-01 18:44:29 | INFO     | src.processing.data_processor | Processed: 9400 | Rejected: 78 | AQI: 54.4 (Moderate)
+2026-05-01 18:45:07 | WARNING  | src.utils.aqi_calculator | Concentration 8775.54 exceeds breakpoint table max
+2026-05-01 18:47:37 | WARNING  | src.utils.aqi_calculator | Concentration 7024.68 exceeds breakpoint table max
+2026-05-01 18:47:41 | INFO     | src.device.simulator | Records published: 9500 / 10500 | scenario=normal
+2026-05-01 18:47:49 | INFO     | src.processing.data_processor | Processed: 9500 | Rejected: 80 | AQI: 58.1 (Moderate)
+2026-05-01 18:48:19 | WARNING  | src.utils.aqi_calculator | Concentration 5861.65 exceeds breakpoint table max
+2026-05-01 18:48:47 | WARNING  | src.utils.aqi_calculator | Concentration 8886.72 exceeds breakpoint table max
+2026-05-01 18:50:37 | WARNING  | src.utils.aqi_calculator | Concentration 7851.68 exceeds breakpoint table max
+2026-05-01 18:51:09 | INFO     | src.processing.data_processor | Processed: 9600 | Rejected: 80 | AQI: 80.8 (Moderate)
+2026-05-01 18:52:57 | WARNING  | src.utils.aqi_calculator | Concentration 6120.80 exceeds breakpoint table max
+2026-05-01 18:53:31 | WARNING  | src.utils.aqi_calculator | Concentration 9903.79 exceeds breakpoint table max
+2026-05-01 18:54:29 | INFO     | src.processing.data_processor | Processed: 9700 | Rejected: 81 | AQI: 89.4 (Moderate)
+2026-05-01 18:54:43 | WARNING  | src.utils.aqi_calculator | Concentration 9084.86 exceeds breakpoint table max
+2026-05-01 18:55:45 | WARNING  | src.utils.aqi_calculator | Concentration 5367.12 exceeds breakpoint table max
+2026-05-01 18:56:15 | WARNING  | src.utils.aqi_calculator | Concentration 5080.19 exceeds breakpoint table max
+2026-05-01 18:56:25 | WARNING  | src.utils.aqi_calculator | Concentration 8166.40 exceeds breakpoint table max
+2026-05-01 18:56:31 | WARNING  | src.utils.aqi_calculator | Concentration 7404.31 exceeds breakpoint table max
+2026-05-01 18:57:49 | INFO     | src.processing.data_processor | Processed: 9800 | Rejected: 82 | AQI: 56.7 (Moderate)
+2026-05-01 18:57:53 | WARNING  | src.utils.aqi_calculator | Concentration 8125.53 exceeds breakpoint table max
+2026-05-01 18:59:52 | WARNING  | src.utils.aqi_calculator | Concentration 5925.32 exceeds breakpoint table max
+2026-05-01 19:01:10 | INFO     | src.processing.data_processor | Processed: 9900 | Rejected: 84 | AQI: 87.3 (Moderate)
+2026-05-01 19:01:41 | INFO     | train_model | Logging initialised — level=INFO  file=logs\airguard.log
+2026-05-01 19:01:41 | INFO     | __main__ | === AirGuard ML Training Starting ===
+2026-05-01 19:01:41 | INFO     | __main__ | Training model...
+2026-05-01 19:01:41 | INFO     | src.output.ml_forecaster | Fetching training data...
+2026-05-01 19:01:42 | ERROR    | src.output.ml_forecaster | Training failed: NDFrame.fillna() got an unexpected keyword argument 'method'
+2026-05-01 19:01:42 | ERROR    | __main__ | Training failed — make sure you have enough data in InfluxDB
+2026-05-01 19:01:42 | INFO     | __main__ | Run the simulator first: python scripts/run_simulator.py
+2026-05-01 19:02:24 | WARNING  | src.utils.aqi_calculator | Concentration 6060.26 exceeds breakpoint table max
+2026-05-01 19:04:22 | INFO     | src.device.simulator | Records published: 10000 / 10500 | scenario=delayed_timestamp
+2026-05-01 19:04:30 | INFO     | src.processing.data_processor | Processed: 10000 | Rejected: 85 | AQI: 44.0 (Good)
+2026-05-01 19:05:13 | INFO     | train_model | Logging initialised — level=INFO  file=logs\airguard.log
+2026-05-01 19:05:13 | INFO     | __main__ | === AirGuard ML Training Starting ===
+2026-05-01 19:05:13 | INFO     | __main__ | Training model...
+2026-05-01 19:05:13 | INFO     | src.output.ml_forecaster | Fetching training data...
+2026-05-01 19:05:14 | INFO     | src.output.ml_forecaster | Model trained successfully. MAE: 45.38
+2026-05-01 19:05:14 | INFO     | __main__ | Training complete!
+2026-05-01 19:07:26 | WARNING  | src.utils.aqi_calculator | Concentration 8449.13 exceeds breakpoint table max
+2026-05-01 19:07:50 | INFO     | src.processing.data_processor | Processed: 10100 | Rejected: 86 | AQI: 54.1 (Moderate)
+2026-05-01 19:08:12 | WARNING  | src.utils.aqi_calculator | Concentration 5454.77 exceeds breakpoint table max
+2026-05-01 19:09:28 | WARNING  | src.utils.aqi_calculator | Concentration 9322.71 exceeds breakpoint table max
+2026-05-01 19:11:10 | INFO     | src.processing.data_processor | Processed: 10200 | Rejected: 87 | AQI: 55.8 (Moderate)
+2026-05-01 19:12:08 | WARNING  | src.utils.aqi_calculator | Concentration 5121.89 exceeds breakpoint table max
+2026-05-01 19:13:02 | WARNING  | src.utils.aqi_calculator | Concentration 5609.69 exceeds breakpoint table max
+2026-05-01 19:14:30 | INFO     | src.processing.data_processor | Processed: 10300 | Rejected: 87 | AQI: 66.3 (Moderate)
+2026-05-01 19:14:50 | WARNING  | src.utils.aqi_calculator | Concentration 8979.24 exceeds breakpoint table max
+2026-05-01 19:17:50 | INFO     | src.processing.data_processor | Processed: 10400 | Rejected: 88 | AQI: 64.0 (Moderate)
+2026-05-01 19:18:56 | WARNING  | src.utils.aqi_calculator | Concentration 5605.06 exceeds breakpoint table max
+2026-05-01 19:19:22 | WARNING  | src.utils.aqi_calculator | Concentration 6891.50 exceeds breakpoint table max
+2026-05-01 19:20:14 | WARNING  | src.utils.aqi_calculator | Concentration 7861.55 exceeds breakpoint table max
+2026-05-01 19:20:36 | WARNING  | src.utils.aqi_calculator | Concentration 9928.37 exceeds breakpoint table max
+2026-05-01 19:21:02 | INFO     | src.device.simulator | Records published: 10500 / 10500 | scenario=spike_anomaly
+2026-05-01 19:21:04 | INFO     | src.device.simulator | Simulation complete. Total records: 10500
+2026-05-01 19:21:06 | WARNING  | src.device.simulator | Simulator disconnected — rc=0
+2026-05-01 19:21:06 | INFO     | __main__ | === AirGuard Simulator Complete ===
