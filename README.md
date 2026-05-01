@@ -1,12 +1,12 @@
-# 🌬️ AirGuard — IoT Air Quality Monitor
+# AirGuard — IoT Air Quality Monitor
 
-> Real-time indoor air quality monitoring pipeline using ESP32, MQTT, Python, InfluxDB, and Streamlit with ML-based AQI forecasting.
+Real-time indoor air quality monitoring pipeline using ESP32, MQTT, Python, InfluxDB, and Streamlit with ML-based AQI forecasting.
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
-Indoor air quality is a silent health risk. Poor ventilation, CO gas buildup, and high particulate matter can cause long-term respiratory damage — yet most spaces have no real-time monitoring. **AirGuard** solves this by continuously monitoring air quality using low-cost sensors, processing the data through a real-time pipeline, storing it in a time-series database, and delivering actionable insights through a live dashboard and a 30-minute AQI forecast.
+Indoor air quality is a silent health risk. Poor ventilation, CO gas buildup, and high particulate matter can cause long-term respiratory damage — yet most spaces have no real-time monitoring. AirGuard solves this by continuously monitoring air quality using low-cost sensors, processing the data through a real-time pipeline, storing it in a time-series database, and delivering actionable insights through a live dashboard and a 30-minute AQI forecast.
 
 **Decisions this system enables:**
 - Trigger ventilation when AQI exceeds safe thresholds
@@ -16,44 +16,44 @@ Indoor air quality is a silent health risk. Poor ventilation, CO gas buildup, an
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
-┌─────────────────┐     MQTT      ┌──────────────────┐     Python     ┌─────────────┐
-│   ESP32 Device  │ ────────────► │ Mosquitto Broker  │ ────────────► │  Pipeline   │
-│  MQ-135, MQ-7   │  (port 1883)  │   (localhost)     │               │  Processor  │
-│  DHT22 Sensors  │               └──────────────────┘               └──────┬──────┘
-└─────────────────┘                                                          │
-         │                                                                   ▼
-         │ (also runs)                                               ┌─────────────┐
-┌─────────────────┐                                                  │  InfluxDB   │
-│ Python Simulator│                                                  │ (localhost  │
-│ (10,500 records)│                                                  │   :8086)    │
-└─────────────────┘                                                  └──────┬──────┘
-                                                                            │
-                                                          ┌─────────────────┴──────────────┐
-                                                          │                                │
-                                                   ┌──────▼──────┐              ┌──────────▼───────┐
-                                                   │  Streamlit  │              │   ML Forecaster  │
-                                                   │  Dashboard  │              │ (Random Forest)  │
-                                                   │  :8501      │              │ 30-min AQI pred  │
-                                                   └─────────────┘              └──────────────────┘
++------------------+     MQTT      +-------------------+     Python     +-------------+
+|   ESP32 Device   | ------------> |  Mosquitto Broker  | ------------> |  Pipeline   |
+|  MQ-135, MQ-7    |  (port 1883)  |    (localhost)     |               |  Processor  |
+|  DHT22 Sensors   |               +-------------------+               +------+------+
++------------------+                                                          |
+         |                                                                    v
+         | (also runs)                                                +-------------+
++------------------+                                                 |  InfluxDB   |
+| Python Simulator |                                                 | (localhost  |
+| (10,500 records) |                                                 |   :8086)    |
++------------------+                                                 +------+------+
+                                                                            |
+                                                         +------------------+------------------+
+                                                         |                                     |
+                                                  +------+------+                  +-----------+----------+
+                                                  |  Streamlit  |                  |    ML Forecaster     |
+                                                  |  Dashboard  |                  |  (Random Forest)     |
+                                                  |   :8501     |                  |  30-min AQI predict  |
+                                                  +-------------+                  +----------------------+
 ```
 
-### Why Each Component?
+### Component Justification
 
 | Component | Choice | Justification |
 |-----------|--------|---------------|
-| **Protocol** | MQTT | Lightweight pub/sub ideal for IoT sensors with low bandwidth. QoS 1 ensures delivery. Far more efficient than REST for continuous sensor streams. |
-| **Broker** | Mosquitto | Industry-standard open-source MQTT broker. Lightweight, runs locally, easy to configure. |
-| **Processing** | Python | Rich ecosystem (pandas, sklearn). Modular class-based structure matches production standards. |
-| **Database** | InfluxDB v2 | Purpose-built time-series DB. Optimized for high-frequency sensor writes. Tag-based indexing enables fast queries by device/location. |
-| **Visualization** | Streamlit | Fast to build, Python-native, supports real-time auto-refresh. Ideal for sensor dashboards. |
-| **ML** | Random Forest | Robust to noisy sensor data. Handles non-linear relationships between gas concentrations and AQI well. |
+| Protocol | MQTT | Lightweight pub/sub ideal for IoT sensors with low bandwidth. QoS 1 ensures delivery. Far more efficient than REST for continuous sensor streams. |
+| Broker | Mosquitto | Industry-standard open-source MQTT broker. Lightweight, runs locally, easy to configure. |
+| Processing | Python | Rich ecosystem (pandas, sklearn). Modular class-based structure matches production standards. |
+| Database | InfluxDB v2 | Purpose-built time-series database. Optimized for high-frequency sensor writes. Tag-based indexing enables fast queries by device and location. |
+| Visualization | Streamlit | Fast to build, Python-native, supports real-time auto-refresh. Ideal for sensor dashboards. |
+| ML | Random Forest | Robust to noisy sensor data. Handles non-linear relationships between gas concentrations and AQI well. |
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 air-quality-monitor/
@@ -91,7 +91,7 @@ air-quality-monitor/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - Python 3.10+
@@ -102,7 +102,7 @@ air-quality-monitor/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/krishnaik06/air-quality-monitor.git
+git clone https://github.com/margi345/air-quality-monitor.git
 cd air-quality-monitor
 ```
 
@@ -137,13 +137,13 @@ influxdb:
 ### 6. Flash ESP32 Firmware
 - Open `esp32_firmware/main.ino` in Arduino IDE
 - Update WiFi credentials and MQTT broker IP
-- Upload to ESP32 (hold BOOT button when prompted)
+- Upload to ESP32 (hold BOOT button when connecting)
 
 ---
 
-## 🚀 Running the Project
+## Running the Project
 
-Open **3 separate terminals** in VS Code:
+Open 3 separate terminals in VS Code:
 
 **Terminal 1 — Start Pipeline:**
 ```bash
@@ -164,7 +164,7 @@ Open browser at: http://localhost:8501
 
 ---
 
-## 🤖 Train the ML Model
+## Train the ML Model
 
 After collecting data, train the forecasting model:
 ```bash
@@ -175,27 +175,25 @@ The model will be saved to `src/output/models/`.
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 **Measurement:** `air_quality`
 
 | Type | Name | Description |
 |------|------|-------------|
-| **Tag** | `device_id` | Identifies the ESP32 or simulator device |
-| **Tag** | `location` | Physical location (e.g., Lab_Room_204) |
-| **Tag** | `aqi_category` | AQI category (Good, Moderate, Hazardous...) |
-| **Tag** | `scenario` | Data scenario (normal, spike, dropout...) |
-| **Field** | `mq135_ppm` | MQ-135 air quality sensor reading (ppm) |
-| **Field** | `mq7_ppm` | MQ-7 carbon monoxide reading (ppm) |
-| **Field** | `temperature_c` | DHT22 temperature (°C) |
-| **Field** | `humidity_pct` | DHT22 humidity (%) |
-| **Field** | `aqi_value` | Calculated AQI value |
-| **Timestamp** | `_time` | UTC timestamp of reading |
+| Tag | `device_id` | Identifies the ESP32 or simulator device |
+| Tag | `location` | Physical location (e.g., Lab_Room_204) |
+| Tag | `aqi_category` | AQI category (Good, Moderate, Hazardous) |
+| Tag | `scenario` | Data scenario (normal, spike, dropout) |
+| Field | `mq135_ppm` | MQ-135 air quality sensor reading (ppm) |
+| Field | `mq7_ppm` | MQ-7 carbon monoxide reading (ppm) |
+| Field | `temperature_c` | DHT22 temperature (Celsius) |
+| Field | `humidity_pct` | DHT22 humidity (%) |
+| Field | `aqi_value` | Calculated AQI value |
+| Timestamp | `_time` | UTC timestamp of reading |
 
-**Why this schema?**
-- Tags are indexed → fast filtering by device/location
-- Fields store numeric measurements → efficient time-series aggregation
-- Timestamp is mandatory in InfluxDB → enables windowed queries
+**Schema design rationale:**
+Tags are indexed in InfluxDB and used for filtering and grouping. Fields store the actual numeric measurements. This separation enables fast queries by device or location without scanning all field data. The timestamp is mandatory and enables all time-windowed aggregation queries.
 
 ### Sample Queries
 ```bash
@@ -204,82 +202,69 @@ python scripts/query_influxdb.py
 
 ---
 
-## 🤖 ML Model Details
+## ML Model Details
 
 **Algorithm:** Random Forest Regressor
 
 **Input Features:**
-- `mq135_ppm` — primary air quality indicator
-- `mq7_ppm` — carbon monoxide level
-- `temperature_c` — affects gas sensor readings
-- `humidity_pct` — affects air quality dispersal
-- `current_aqi` — current baseline
-- `hour_of_day` — captures daily patterns
-- `rolling_avg_aqi_5` — 5-reading rolling average (most important feature)
+
+| Feature | Description |
+|---------|-------------|
+| `mq135_ppm` | Primary air quality indicator |
+| `mq7_ppm` | Carbon monoxide level |
+| `temperature_c` | Affects gas sensor readings |
+| `humidity_pct` | Affects air quality dispersal |
+| `current_aqi` | Current AQI baseline |
+| `hour_of_day` | Captures daily patterns |
+| `rolling_avg_aqi_5` | 5-reading rolling average (highest importance feature) |
 
 **Output:** Predicted AQI value 30 minutes into the future
 
-**How results are used:**
-- If predicted AQI > 150 → trigger ventilation alert
-- If predicted AQI > 300 → send hazardous air warning
-- Dashboard shows forecast alongside current readings for proactive decisions
+**How results are used in decision-making:**
+- If predicted AQI exceeds 150, the system flags an upcoming unhealthy air quality event
+- If predicted AQI exceeds 300, a hazardous air warning is triggered
+- The dashboard displays the forecast alongside current readings so occupants can act proactively rather than reactively
 
 ---
 
-## 📊 Data Validation & Bad Data Handling
+## Data Validation and Bad Data Handling
 
-The pipeline handles the following bad data scenarios:
-
-| Scenario | How Handled |
-|----------|-------------|
-| **Null sensor values** | Dropped with warning log |
-| **Out-of-range values** | Rejected based on sensor config thresholds |
-| **Duplicate messages** | Deduplicated using msg_id + 10s time window |
-| **Malformed timestamps** | Replaced with current UTC time |
-| **Both gas sensors null** | Record dropped entirely |
-| **JSON decode errors** | Caught and logged, message skipped |
+| Scenario | Handling Strategy |
+|----------|-------------------|
+| Null sensor values | Dropped with warning logged |
+| Out-of-range values | Rejected based on per-sensor thresholds in config |
+| Duplicate messages | Deduplicated using msg_id and 10-second time window |
+| Malformed timestamps | Replaced with current UTC time |
+| Both gas sensors null | Entire record dropped |
+| JSON decode errors | Exception caught and logged, message skipped |
 
 ---
 
-## 📈 Data Collection
+## Data Collection Summary
 
-- **Total records:** 10,500+
-- **Collection method:** Real ESP32 sensors + Python simulator
-- **Publish interval:** Every 2 seconds
-- **Induced scenarios:** spike anomaly, sensor dropout, out-of-range, duplicate, delayed timestamp
-- **Attributes:** timestamp, mq135_ppm, mq7_ppm, temperature_c, humidity_pct, aqi_value
-
----
-
-## 🔧 Engineering Standards
-
-- ✅ Modular class-based structure (no single script dump)
-- ✅ Central YAML configuration file
-- ✅ Structured logging to file and console
-- ✅ Error handling with graceful recovery
-- ✅ Reusable classes for MQTT, InfluxDB, processing, ML
-- ✅ Config-driven execution (change behavior via config, not code)
+| Attribute | Value |
+|-----------|-------|
+| Total records | 10,500+ |
+| Collection method | Real ESP32 sensors and Python simulator |
+| Publish interval | Every 2 seconds |
+| Measurable attributes | mq135_ppm, mq7_ppm, temperature_c, humidity_pct, aqi_value |
+| Induced scenarios | Spike anomaly, sensor dropout, out-of-range, duplicate, delayed timestamp |
 
 ---
 
-## 📹 Video Demo
+## Scaling Considerations
 
-[YouTube Link - Coming Soon]
+To scale this system to enterprise level, the following changes would be required:
 
----
-
-## 🏭 Scaling Considerations
-
-To scale this to enterprise level:
-- Replace Mosquitto with **AWS IoT Core** or **HiveMQ** for thousands of devices
-- Replace local InfluxDB with **InfluxDB Cloud** or **TimescaleDB on RDS**
-- Add **Apache Kafka** between MQTT and processing for buffering
-- Deploy pipeline as **Docker containers** on Kubernetes
-- Add **Grafana** for enterprise-grade dashboards
-- Implement **device authentication** with TLS certificates
+- Replace Mosquitto with AWS IoT Core or HiveMQ to support thousands of concurrent devices
+- Replace local InfluxDB with InfluxDB Cloud or TimescaleDB on RDS for managed scalability
+- Add Apache Kafka between MQTT and the processing layer for message buffering and replay
+- Deploy pipeline components as Docker containers orchestrated with Kubernetes
+- Replace Streamlit with Grafana for enterprise-grade dashboards with role-based access
+- Implement device authentication using TLS certificates and mutual authentication
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 Margi — IoT Capstone Project, Spring 2026
