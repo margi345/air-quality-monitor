@@ -267,4 +267,4 @@ To scale this system to enterprise level, the following changes would be require
 
 ## Author
 
-Margi — IoT Capstone Project, Spring 2026
+Margi,jaydev,khushi — IoT Capstone Project, Spring 2026
